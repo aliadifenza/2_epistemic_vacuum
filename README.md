@@ -60,3 +60,7 @@ Qwen/Qwen2.5-3B, revision `3aab1f1954e9cc14eb9509a215f9e5ca08227a9b`, float32, M
 - AI review is never presented as human verification.
 - Negative results, AI errors and deviations are preserved.
 - No scientific change without PI approval.
+
+## Gate 4 archival update (15 November 2026)
+
+The original freeze remains at tag `gate4-freeze-2026-11-15`. Gemini's conditional review and PI Decision 12 have since been added. See `docs/GATE4_CLOSURE_2026-11-15.md` for the verified archival status and accepted limitations. Pilot and main experiment are **not authorized**.
