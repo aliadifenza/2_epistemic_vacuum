@@ -1,0 +1,302 @@
+{
+ "stage": "gate3",
+ "split": "pilot",
+ "limit": 0,
+ "model_id": "Qwen/Qwen2.5-3B",
+ "revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+ "commit_hash": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+ "snapshot_path": "/root/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B/snapshots/3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+ "file_sha256": {
+  "config.json": "27467e2fc311a7656c09a43ae9c3d408211e1f212bbddbc93c8596a06423826f",
+  "generation_config.json": "8c970692323e3ea0e9b8b0a4dca79388d31226e41f83c9fd6014804280ebf6e8",
+  "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+  "model-00001-of-00002.safetensors": "f9558df91d3b89b4826e4db37439edb52f1d62a4fd602685013e7ca6b9f60f8f",
+  "model-00002-of-00002.safetensors": "51410930d5cf19a998fdb17ef0c46e4d9ace72c97a975a3331395a8a500f5edb",
+  "model.safetensors.index.json": "bc8aaa0c87d4335177e01c765f1de0db81661c67c1a72fbfb0d521b09f5ddc56",
+  "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+  "tokenizer_config.json": "c91efca15ceff6e9ee9424db58a6f59cd41294e550a86cbd07e3c1fb500b34f9",
+  "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+ },
+ "dataset_sha256": "1d3552f2e5aa325cd1590d8b73b2968825d9838788c944e89a631f66ecbfd5de",
+ "gpu": "A10G",
+ "device_name": "NVIDIA A10G",
+ "torch": "2.5.1+cu124",
+ "cuda": "12.4",
+ "tf32_matmul": false,
+ "deterministic_algorithms": true,
+ "gate3": {
+  "status": "PASS",
+  "failures": [],
+  "checks": {
+   "checkpoint_revision": {
+    "ok": true,
+    "detail": {
+     "expected": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+     "found": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+     "toy": false
+    }
+   },
+   "tokenizer_sha256_prefix": {
+    "ok": true,
+    "detail": {
+     "full": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+     "recorded_prefix": "c0382117ea329cdf"
+    }
+   },
+   "vocab_padding_consistent": {
+    "ok": true,
+    "detail": {
+     "tokenizer": 151665,
+     "lm_head_rows": 151936,
+     "padded_rows": 271
+    }
+   },
+   "logits_finite": {
+    "ok": true,
+    "detail": null
+   },
+   "entropy_in_range": {
+    "ok": true,
+    "detail": {
+     "H_bits": 2.2951447641035134,
+     "p_max": 0.6821600198745728
+    }
+   },
+   "repeat_logits_bitwise_equal": {
+    "ok": true,
+    "detail": {
+     "max_abs_diff": 0.0
+    }
+   },
+   "repeat_seq_logprob_equal": {
+    "ok": true,
+    "detail": {
+     "logp_paris": -0.38249048590660095
+    }
+   },
+   "sanity_greedy_paris": {
+    "ok": true,
+    "detail": {
+     "greedy": " Paris",
+     "H_bits": 2.2951447641035134,
+     "p_max": 0.6821600198745728
+    }
+   },
+   "mask_forward_identical": {
+    "ok": true,
+    "detail": {
+     "max_abs_diff_per_prompt": [
+      0.0,
+      0.0,
+      0.0
+     ]
+    }
+   },
+   "mask_greedy_identical": {
+    "ok": true,
+    "detail": {
+     "per_prompt": [
+      true,
+      true,
+      true
+     ]
+    }
+   },
+   "no_padded_tokens_generated": {
+    "ok": true,
+    "detail": [
+     12095,
+     151643,
+     151643,
+     12095,
+     61953,
+     21941
+    ]
+   },
+   "seeded_sampling_reproducible": {
+    "ok": true,
+    "detail": {
+     "a": " Paris is the capital of France. It is the center of government, economy,",
+     "b": " Paris is the capital of France. It is the center of government, economy,"
+    }
+   },
+   "stops_at_newline": {
+    "ok": true,
+    "detail": [
+     " Paris\n",
+     " Lima",
+     " The answer is a.",
+     " Paris\n",
+     " Lima\n",
+     " How to get is an amazing question in the history process of humanity. This question"
+    ]
+   },
+   "generation_config_explicit": {
+    "ok": true,
+    "detail": {
+     "m4": {
+      "max_new_tokens": 16,
+      "min_new_tokens": 0,
+      "pad_token_id": 151643,
+      "eos_token_id": 151643,
+      "transformers_version": "4.46.3",
+      "_full": {
+       "max_length": 20,
+       "max_new_tokens": 16,
+       "min_length": 0,
+       "min_new_tokens": 0,
+       "early_stopping": false,
+       "max_time": null,
+       "stop_strings": null,
+       "do_sample": false,
+       "num_beams": 1,
+       "num_beam_groups": 1,
+       "penalty_alpha": null,
+       "dola_layers": null,
+       "use_cache": true,
+       "cache_implementation": null,
+       "cache_config": null,
+       "return_legacy_cache": null,
+       "temperature": 1.0,
+       "top_k": 50,
+       "top_p": 1.0,
+       "min_p": null,
+       "typical_p": 1.0,
+       "epsilon_cutoff": 0.0,
+       "eta_cutoff": 0.0,
+       "diversity_penalty": 0.0,
+       "repetition_penalty": 1.0,
+       "encoder_repetition_penalty": 1.0,
+       "length_penalty": 1.0,
+       "no_repeat_ngram_size": 0,
+       "bad_words_ids": null,
+       "force_words_ids": null,
+       "renormalize_logits": false,
+       "constraints": null,
+       "forced_bos_token_id": null,
+       "forced_eos_token_id": null,
+       "remove_invalid_values": false,
+       "exponential_decay_length_penalty": null,
+       "suppress_tokens": null,
+       "begin_suppress_tokens": null,
+       "forced_decoder_ids": null,
+       "sequence_bias": null,
+       "token_healing": false,
+       "guidance_scale": null,
+       "low_memory": null,
+       "watermarking_config": null,
+       "num_return_sequences": 1,
+       "output_attentions": false,
+       "output_hidden_states": false,
+       "output_scores": false,
+       "output_logits": null,
+       "return_dict_in_generate": false,
+       "pad_token_id": 151643,
+       "bos_token_id": null,
+       "eos_token_id": 151643,
+       "encoder_no_repeat_ngram_size": 0,
+       "decoder_start_token_id": null,
+       "is_assistant": false,
+       "num_assistant_tokens": 20,
+       "num_assistant_tokens_schedule": "constant",
+       "assistant_confidence_threshold": 0.4,
+       "prompt_lookup_num_tokens": null,
+       "max_matching_ngram_size": null,
+       "generation_kwargs": {},
+       "_from_model_config": false,
+       "transformers_version": "4.46.3"
+      }
+     },
+     "m2": {
+      "max_new_tokens": 16,
+      "min_new_tokens": 0,
+      "do_sample": true,
+      "top_k": 0,
+      "pad_token_id": 151643,
+      "eos_token_id": 151643,
+      "transformers_version": "4.46.3",
+      "_full": {
+       "max_length": 20,
+       "max_new_tokens": 16,
+       "min_length": 0,
+       "min_new_tokens": 0,
+       "early_stopping": false,
+       "max_time": null,
+       "stop_strings": null,
+       "do_sample": true,
+       "num_beams": 1,
+       "num_beam_groups": 1,
+       "penalty_alpha": null,
+       "dola_layers": null,
+       "use_cache": true,
+       "cache_implementation": null,
+       "cache_config": null,
+       "return_legacy_cache": null,
+       "temperature": 1.0,
+       "top_k": 0,
+       "top_p": 1.0,
+       "min_p": null,
+       "typical_p": 1.0,
+       "epsilon_cutoff": 0.0,
+       "eta_cutoff": 0.0,
+       "diversity_penalty": 0.0,
+       "repetition_penalty": 1.0,
+       "encoder_repetition_penalty": 1.0,
+       "length_penalty": 1.0,
+       "no_repeat_ngram_size": 0,
+       "bad_words_ids": null,
+       "force_words_ids": null,
+       "renormalize_logits": false,
+       "constraints": null,
+       "forced_bos_token_id": null,
+       "forced_eos_token_id": null,
+       "remove_invalid_values": false,
+       "exponential_decay_length_penalty": null,
+       "suppress_tokens": null,
+       "begin_suppress_tokens": null,
+       "forced_decoder_ids": null,
+       "sequence_bias": null,
+       "token_healing": false,
+       "guidance_scale": null,
+       "low_memory": null,
+       "watermarking_config": null,
+       "num_return_sequences": 1,
+       "output_attentions": false,
+       "output_hidden_states": false,
+       "output_scores": false,
+       "output_logits": null,
+       "return_dict_in_generate": false,
+       "pad_token_id": 151643,
+       "bos_token_id": null,
+       "eos_token_id": 151643,
+       "encoder_no_repeat_ngram_size": 0,
+       "decoder_start_token_id": null,
+       "is_assistant": false,
+       "num_assistant_tokens": 20,
+       "num_assistant_tokens_schedule": "constant",
+       "assistant_confidence_threshold": 0.4,
+       "prompt_lookup_num_tokens": null,
+       "max_matching_ngram_size": null,
+       "generation_kwargs": {},
+       "_from_model_config": false,
+       "transformers_version": "4.46.3"
+      }
+     },
+     "call_settings": {
+      "attention_mask": "all ones (single unpadded sequence)",
+      "logits_processors": [
+       "MaskPaddedVocab(vocab_size=151665)"
+      ],
+      "stopping_criteria": [
+       "StopAtNewline"
+      ],
+      "model_generation_config_replaced_by_explicit_config": true
+     }
+    }
+   }
+  }
+ },
+ "status": "PASS",
+ "runtime_s": 67.7,
+ "gpu_cost_usd_estimate": 0.021
+}

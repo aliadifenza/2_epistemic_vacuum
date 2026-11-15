@@ -1,0 +1,539 @@
+{
+ "n_pairs": 32,
+ "n_unknown": 24,
+ "n_known": 8,
+ "n_uncertain": 0,
+ "knownness_ties": [],
+ "P1_primary_unknown_3shot": {
+  "n": 24,
+  "mean": -1.2038785560442022e-05,
+  "median": 6.225771961165805e-05,
+  "prop_positive": 0.5416666666666666,
+  "ci95": [
+   -8.782867341842561e-05,
+   6.389227138984265e-05
+  ],
+  "perm": {
+   "p": 0.7632673978805542,
+   "method": "exact",
+   "n_perm": 16777216,
+   "sided": "two-sided"
+  }
+ },
+ "P1_all_pairs_3shot": {
+  "n": 32,
+  "mean": 1.586539954195887e-05,
+  "median": 6.500944202603165e-05,
+  "prop_positive": 0.5625,
+  "ci95": [
+   -5.138357906574461e-05,
+   8.450851251305402e-05
+  ],
+  "perm": {
+   "p": 0.6422235777642223,
+   "method": "monte-carlo",
+   "n_perm": 100000,
+   "sided": "two-sided"
+  }
+ },
+ "known_pairs_3shot": {
+  "n": 8,
+  "mean": 9.957795484916154e-05,
+  "median": 0.00020913090344887308,
+  "prop_positive": 0.625,
+  "ci95": [
+   -3.147282510829186e-05,
+   0.00021265654779134557
+  ],
+  "perm": {
+   "p": 0.1875,
+   "method": "exact",
+   "n_perm": 256,
+   "sided": "two-sided"
+  }
+ },
+ "sens_unknown_0shot": {
+  "n": 24,
+  "mean": -4.978897742446975e-05,
+  "median": 2.063791810336113e-05,
+  "prop_positive": 0.5416666666666666,
+  "ci95": [
+   -0.00024014725793775613,
+   0.0001424919258064131
+  ],
+  "perm": {
+   "p": 0.6188874244689941,
+   "method": "exact",
+   "n_perm": 16777216,
+   "sided": "two-sided"
+  }
+ },
+ "sens_all_0shot": {
+  "n": 32,
+  "mean": 1.3328655444899695e-06,
+  "median": 3.302066896537781e-05,
+  "prop_positive": 0.5625,
+  "ci95": [
+   -0.00016454708844163417,
+   0.00016981244478748295
+  ],
+  "perm": {
+   "p": 0.9874401255987441,
+   "method": "monte-carlo",
+   "n_perm": 100000,
+   "sided": "two-sided"
+  }
+ },
+ "supp_istanbul_excl_unknown_3shot": {
+  "n": 22,
+  "mean": 6.191375431008339e-06,
+  "median": 6.500944202603165e-05,
+  "prop_positive": 0.5909090909090909,
+  "ci95": [
+   -6.99813041146938e-05,
+   8.505558346282403e-05
+  ],
+  "perm": {
+   "p": 0.8758773803710938,
+   "method": "exact",
+   "n_perm": 4194304,
+   "sided": "two-sided"
+  },
+  "n_istanbul_in_unknown": 2
+ },
+ "P2_C_vs_A": {
+  "diff": -5.576537454388131e-05,
+  "ci": [
+   -9.65195300405508e-05,
+   -1.4466965611026354e-05
+  ],
+  "p": 0.08029197080291971,
+  "n_perm": 10000,
+  "sided": "two-sided"
+ },
+ "P3_R1S1_all_pairs": {
+  "n": 32,
+  "mean": 0.0008137226104736328,
+  "median": 0.0003962516784667969,
+  "prop_positive": 0.5,
+  "ci95": [
+   -0.0059748455882072445,
+   0.007663132995367045
+  ],
+  "perm": {
+   "p": 0.8208717912820872,
+   "method": "monte-carlo",
+   "n_perm": 100000,
+   "sided": "two-sided"
+  }
+ },
+ "P3_R2S2_all_pairs_robustness": {
+  "n": 32,
+  "mean": 0.001162409782409668,
+  "median": 0.00019359588623046875,
+  "prop_positive": 0.5,
+  "ci95": [
+   -0.00927486345171928,
+   0.011625564098358153
+  ],
+  "perm": {
+   "p": 0.8115818841811582,
+   "method": "monte-carlo",
+   "n_perm": 100000,
+   "sided": "two-sided"
+  }
+ },
+ "P3_R1S1_unknown_descriptive": {
+  "n": 24,
+  "mean": -0.0031317472457885742,
+  "median": -0.011670589447021484,
+  "prop_positive": 0.375,
+  "ci95": [
+   -0.01121562620004018,
+   0.005173062284787489
+  ],
+  "perm": {
+   "p": 0.46748411655426025,
+   "method": "exact",
+   "n_perm": 16777216,
+   "sided": "two-sided"
+  }
+ },
+ "holm_secondary": {
+  "P2": 0.08029197080291971,
+  "P3_all_pairs": 0.8208717912820872,
+  "adjusted": {
+   "P2": 0.16058394160583941,
+   "P3": 0.8208717912820872
+  },
+  "method": "Holm"
+ },
+ "surprisal": {
+  "A": {
+   "n": 12,
+   "mean": 5.88796282613047,
+   "median": 5.8892940023671025
+  },
+  "B": {
+   "n": 32,
+   "mean": 5.894327804597813,
+   "median": 5.891947093274858
+  },
+  "C": {
+   "n": 32,
+   "mean": 5.89275350968043,
+   "median": 5.8902132948239645
+  },
+  "D": {
+   "n": 12,
+   "mean": 5.932688719093434,
+   "median": 5.928837557668271
+  },
+  "paired_C_minus_B_all": {
+   "n": 32,
+   "mean": -0.0015742949173822018,
+   "median": -0.002316285504235349,
+   "prop_positive": 0.5
+  }
+ },
+ "M4_categories": {
+  "code3": {
+   "A": {
+    "CORRECT_ANSWER": 0,
+    "CORRECT_REJECTION": 0,
+    "FALSE_REJECTION": 0,
+    "ABSTENTION": 0,
+    "FABRICATED_OR_INCORRECT": 0,
+    "NONANSWER": 0,
+    "UNMATCHED": 12
+   },
+   "B": {
+    "CORRECT_ANSWER": 0,
+    "CORRECT_REJECTION": 0,
+    "FALSE_REJECTION": 0,
+    "ABSTENTION": 0,
+    "FABRICATED_OR_INCORRECT": 0,
+    "NONANSWER": 0,
+    "UNMATCHED": 32
+   },
+   "C": {
+    "CORRECT_ANSWER": 0,
+    "CORRECT_REJECTION": 0,
+    "FALSE_REJECTION": 0,
+    "ABSTENTION": 0,
+    "FABRICATED_OR_INCORRECT": 0,
+    "NONANSWER": 0,
+    "UNMATCHED": 32
+   },
+   "D": {
+    "CORRECT_ANSWER": 0,
+    "CORRECT_REJECTION": 0,
+    "FALSE_REJECTION": 0,
+    "ABSTENTION": 0,
+    "FABRICATED_OR_INCORRECT": 0,
+    "NONANSWER": 0,
+    "UNMATCHED": 12
+   }
+  },
+  "code0": {
+   "A": {
+    "CORRECT_ANSWER": 0,
+    "CORRECT_REJECTION": 0,
+    "FALSE_REJECTION": 0,
+    "ABSTENTION": 0,
+    "FABRICATED_OR_INCORRECT": 0,
+    "NONANSWER": 0,
+    "UNMATCHED": 12
+   },
+   "B": {
+    "CORRECT_ANSWER": 0,
+    "CORRECT_REJECTION": 0,
+    "FALSE_REJECTION": 0,
+    "ABSTENTION": 0,
+    "FABRICATED_OR_INCORRECT": 0,
+    "NONANSWER": 0,
+    "UNMATCHED": 32
+   },
+   "C": {
+    "CORRECT_ANSWER": 0,
+    "CORRECT_REJECTION": 0,
+    "FALSE_REJECTION": 0,
+    "ABSTENTION": 0,
+    "FABRICATED_OR_INCORRECT": 0,
+    "NONANSWER": 0,
+    "UNMATCHED": 32
+   },
+   "D": {
+    "CORRECT_ANSWER": 0,
+    "CORRECT_REJECTION": 0,
+    "FALSE_REJECTION": 0,
+    "ABSTENTION": 0,
+    "FABRICATED_OR_INCORRECT": 0,
+    "NONANSWER": 0,
+    "UNMATCHED": 12
+   }
+  }
+ },
+ "M4_pending_adjudication": [
+  "A01:code0",
+  "A01:code3",
+  "A02:code0",
+  "A02:code3",
+  "A03:code0",
+  "A03:code3",
+  "A04:code0",
+  "A04:code3",
+  "A05:code0",
+  "A05:code3",
+  "A06:code0",
+  "A06:code3",
+  "A07:code0",
+  "A07:code3",
+  "A08:code0",
+  "A08:code3",
+  "A09:code0",
+  "A09:code3",
+  "A10:code0",
+  "A10:code3",
+  "A11:code0",
+  "A11:code3",
+  "A12:code0",
+  "A12:code3",
+  "D01:code0",
+  "D01:code3",
+  "D02:code0",
+  "D02:code3",
+  "D03:code0",
+  "D03:code3",
+  "D04:code0",
+  "D04:code3",
+  "D05:code0",
+  "D05:code3",
+  "D06:code0",
+  "D06:code3",
+  "D07:code0",
+  "D07:code3",
+  "D08:code0",
+  "D08:code3",
+  "D09:code0",
+  "D09:code3",
+  "D10:code0",
+  "D10:code3",
+  "D11:code0",
+  "D11:code3",
+  "D12:code0",
+  "D12:code3",
+  "M01-B:code0",
+  "M01-B:code3",
+  "M01-C:code0",
+  "M01-C:code3",
+  "M02-B:code0",
+  "M02-B:code3",
+  "M02-C:code0",
+  "M02-C:code3",
+  "M03-B:code0",
+  "M03-B:code3",
+  "M03-C:code0",
+  "M03-C:code3",
+  "M04-B:code0",
+  "M04-B:code3",
+  "M04-C:code0",
+  "M04-C:code3",
+  "M07-B:code0",
+  "M07-B:code3",
+  "M07-C:code0",
+  "M07-C:code3",
+  "M09-B:code0",
+  "M09-B:code3",
+  "M09-C:code0",
+  "M09-C:code3",
+  "M10-B:code0",
+  "M10-B:code3",
+  "M10-C:code0",
+  "M10-C:code3",
+  "M11-B:code0",
+  "M11-B:code3",
+  "M11-C:code0",
+  "M11-C:code3",
+  "M12-B:code0",
+  "M12-B:code3",
+  "M12-C:code0",
+  "M12-C:code3",
+  "M13-B:code0",
+  "M13-B:code3",
+  "M13-C:code0",
+  "M13-C:code3",
+  "M14-B:code0",
+  "M14-B:code3",
+  "M14-C:code0",
+  "M14-C:code3",
+  "M15-B:code0",
+  "M15-B:code3",
+  "M15-C:code0",
+  "M15-C:code3",
+  "M16-B:code0",
+  "M16-B:code3",
+  "M16-C:code0",
+  "M16-C:code3",
+  "M18-B:code0",
+  "M18-B:code3",
+  "M18-C:code0",
+  "M18-C:code3",
+  "M19-B:code0",
+  "M19-B:code3",
+  "M19-C:code0",
+  "M19-C:code3",
+  "M20-B:code0",
+  "M20-B:code3",
+  "M20-C:code0",
+  "M20-C:code3",
+  "M21-B:code0",
+  "M21-B:code3",
+  "M21-C:code0",
+  "M21-C:code3",
+  "M22-B:code0",
+  "M22-B:code3",
+  "M22-C:code0",
+  "M22-C:code3",
+  "M23-B:code0",
+  "M23-B:code3",
+  "M23-C:code0",
+  "M23-C:code3",
+  "M24-B:code0",
+  "M24-B:code3",
+  "M24-C:code0",
+  "M24-C:code3",
+  "M25-B:code0",
+  "M25-B:code3",
+  "M25-C:code0",
+  "M25-C:code3",
+  "M26-B:code0",
+  "M26-B:code3",
+  "M26-C:code0",
+  "M26-C:code3",
+  "M27-B:code0",
+  "M27-B:code3",
+  "M27-C:code0",
+  "M27-C:code3",
+  "M28-B:code0",
+  "M28-B:code3",
+  "M28-C:code0",
+  "M28-C:code3",
+  "M29-B:code0",
+  "M29-B:code3",
+  "M29-C:code0",
+  "M29-C:code3",
+  "M30-B:code0",
+  "M30-B:code3",
+  "M30-C:code0",
+  "M30-C:code3",
+  "M31-B:code0",
+  "M31-B:code3",
+  "M31-C:code0",
+  "M31-C:code3",
+  "M32-B:code0",
+  "M32-B:code3",
+  "M32-C:code0",
+  "M32-C:code3",
+  "R02-B:code0",
+  "R02-B:code3",
+  "R02-C:code0",
+  "R02-C:code3",
+  "R05-B:code0",
+  "R05-B:code3",
+  "R05-C:code0",
+  "R05-C:code3",
+  "R06-B:code0",
+  "R06-B:code3",
+  "R06-C:code0",
+  "R06-C:code3",
+  "R10-B:code0",
+  "R10-B:code3",
+  "R10-C:code0",
+  "R10-C:code3"
+ ],
+ "D_vs_C_descriptive": {
+  "medianH_D": 8.499444519394313,
+  "medianH_C": 8.499507121079228,
+  "M4_D": {
+   "CORRECT_ANSWER": 0,
+   "CORRECT_REJECTION": 0,
+   "FALSE_REJECTION": 0,
+   "ABSTENTION": 0,
+   "FABRICATED_OR_INCORRECT": 0,
+   "NONANSWER": 0,
+   "UNMATCHED": 12
+  },
+  "M4_C": {
+   "CORRECT_ANSWER": 0,
+   "CORRECT_REJECTION": 0,
+   "FALSE_REJECTION": 0,
+   "ABSTENTION": 0,
+   "FABRICATED_OR_INCORRECT": 0,
+   "NONANSWER": 0,
+   "UNMATCHED": 32
+  }
+ },
+ "M2_descriptive": {
+  "A": {
+   "median_bits": 3.321928094887362
+  },
+  "B": {
+   "median_bits": 3.321928094887362
+  },
+  "C": {
+   "median_bits": 3.321928094887362
+  },
+  "D": {
+   "median_bits": 3.321928094887362
+  }
+ },
+ "inconclusive_conditions": {
+  "1_fewer_than_10_unknown_pairs": false,
+  "2_positive_control_fails": true,
+  "3_nonanswers_over_25pct": null,
+  "4_format_dependent": false,
+  "5_integrity_defect": true,
+  "details": {
+   "2": "median H(A) vs median H(B-Unknown), three-shot",
+   "3": {
+    "B": {
+     "n": 32,
+     "nonanswer": 0,
+     "unmatched": 32,
+     "lower": 0.0,
+     "upper": 1.0
+    },
+    "C": {
+     "n": 32,
+     "nonanswer": 0,
+     "unmatched": 32,
+     "lower": 0.0,
+     "upper": 1.0
+    },
+    "threshold": 0.25,
+    "rule": "lower bound = coded NONANSWER; upper bound adds UNMATCHED awaiting adjudication; None = straddles threshold"
+   },
+   "5": [
+    "R02: distractor not validated (PENDING)",
+    "R05: distractor not validated (PENDING)",
+    "R06: distractor not validated (PENDING)",
+    "R10: distractor not validated (PENDING)"
+   ]
+  }
+ },
+ "series_insensitive": {
+  "three_shot": {
+   "numerator": 0,
+   "denominator": 0,
+   "percent": null,
+   "label": null
+  },
+  "no_demo": {
+   "numerator": 0,
+   "denominator": 0,
+   "percent": null,
+   "label": null
+  }
+ }
+}

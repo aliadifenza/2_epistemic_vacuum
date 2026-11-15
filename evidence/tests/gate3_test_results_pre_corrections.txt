@@ -1,0 +1,22 @@
+20 passed in 6.48s
+Sun Nov 15 16:29:25 UTC 2026
+PASSED pipeline/tests/test_model_backend.py::test_vocab_padding_present
+PASSED pipeline/tests/test_model_backend.py::test_seq_logprob_manual
+PASSED pipeline/tests/test_model_backend.py::test_entropy_matches_torch
+PASSED pipeline/tests/test_model_backend.py::test_knownness_logic_and_determinism
+PASSED pipeline/tests/test_model_backend.py::test_sampling_seeded_and_greedy_fixed
+PASSED pipeline/tests/test_model_backend.py::test_rejection_pref_finite
+PASSED pipeline/tests/test_pipeline.py::test_entropy_uniform_and_onehot
+PASSED pipeline/tests/test_pipeline.py::test_entropy_two_point
+PASSED pipeline/tests/test_pipeline.py::test_padded_vocab_rows_removed
+PASSED pipeline/tests/test_pipeline.py::test_log_softmax_stable
+PASSED pipeline/tests/test_pipeline.py::test_prompt_format
+PASSED pipeline/tests/test_pipeline.py::test_bootstrap_and_perm_known_signal
+PASSED pipeline/tests/test_pipeline.py::test_perm_null
+PASSED pipeline/tests/test_pipeline.py::test_perm_exact_small
+PASSED pipeline/tests/test_pipeline.py::test_perm_mc_branch
+PASSED pipeline/tests/test_pipeline.py::test_bootstrap_reproducible
+PASSED pipeline/tests/test_pipeline.py::test_two_sample
+PASSED pipeline/tests/test_pipeline.py::test_holm
+PASSED pipeline/tests/test_pipeline.py::test_normalize_and_m2
+PASSED pipeline/tests/test_pipeline.py::test_inconclusive_rules

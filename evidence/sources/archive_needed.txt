@@ -1,0 +1,29 @@
+https://ems.press/books/dms/245	M15-B
+https://mathshistory.st-andrews.ac.uk/ICM/ICM_Berkeley_1986/	M19-B
+https://mathshistory.st-andrews.ac.uk/ICM/ICM_Bologna_1928/	M06-B
+https://mathshistory.st-andrews.ac.uk/ICM/ICM_Cambridge_1912/	M03-B
+https://mathshistory.st-andrews.ac.uk/ICM/ICM_Edinburgh_1958/	M10-B
+https://mathshistory.st-andrews.ac.uk/ICM/ICM_Heidelberg_1904/	M01-B
+https://mathshistory.st-andrews.ac.uk/ICM/ICM_Moscow_1966/	D14
+https://mathshistory.st-andrews.ac.uk/ICM/ICM_Oslo_1936/	M08-B
+https://mathshistory.st-andrews.ac.uk/ICM/ICM_Rome_1908/	M02-B
+https://mathshistory.st-andrews.ac.uk/ICM/ICM_Stockholm_1962/	M11-B
+https://mathshistory.st-andrews.ac.uk/ICM/ICM_Strasbourg_1920/	M04-B
+https://mathshistory.st-andrews.ac.uk/ICM/ICM_Toronto_1924/	M05-B
+https://mathshistory.st-andrews.ac.uk/ICM/ICM_Vancouver_1974/	M12-B
+https://mathshistory.st-andrews.ac.uk/ICM/ICM_Zurich_1932/	M07-B
+https://scholarworks.uni.edu/pias/vol58/iss1/17/	M18-B
+https://science.nasa.gov/moon/facts/	D01, D02, D03, D04, DP01
+https://www.biodiversitylibrary.org/bibliography/197991	M31-B
+https://www.biodiversitylibrary.org/bibliography/30689	M14-B
+https://www.geosociety.org.cn/?v1=v40&v4=68e3f32c5953f&v5=en	D15
+https://www.iapt-taxon.org/historic/Congress/IBC_1993/Proceedings.pdf	DP04
+https://www.iaptglobal.org/iabms-history	M01-C, M03-C, M05-C, M07-C, M11-C, M15-C, M25-C, M26-C, M27-C, M28-C, M30-C, P02-C, P03-C, D02, D06, D09, D13, D16, DP04
+https://www.iugs.org/about-igc/history-of-igc/	M32-C, D03, D07, D11, D15, DP02, DP03
+https://www.iugs.org/igc/about-igc/	M02-C, M04-C, M06-C, M08-C, M09-C, M10-C, M12-C, M18-C, M19-C
+https://www.mathunion.org/fileadmin/IMU/ICM2018/static_site/portal/news-last-day.html	DP01
+https://www.mathunion.org/icm/past-icms	M13-C, M14-C, M16-C, M17-C, M20-C, M21-C, M22-C, M23-C, M24-C, M29-C, M31-C, P01-C, P04-C, P05-C, P06-C, D01, D04, D05, D08, D10, D12, D14
+https://www.mobot.org/MOBOT/research/conferences/ibc99.html	D13
+https://www.nature.com/articles/092007a0	P06-B
+https://www.nature.com/articles/s41477-017-0018-4	D16
+https://www.timeanddate.com/date/february-30.html	D05, D06, D07, D08, DP02

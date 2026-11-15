@@ -1,0 +1,2548 @@
+{
+ "knownness": {
+  "P02": {
+   "cls": "Uncertain",
+   "formulations": [
+    {
+     "prompt": "The 2004 International Geological Congress was held in",
+     "scores": {
+      "Florence": -1.7581950426101685,
+      "Kiev": -11.21291446685791,
+      "Istanbul": -5.488686561584473,
+      "Baltimore": -11.694647789001465
+     },
+     "first": true,
+     "tie_at_top": false,
+     "margin": 3.730491518974304
+    },
+    {
+     "prompt": "In 2004, the host city for the International Geological Congress was",
+     "scores": {
+      "Florence": -7.967881202697754,
+      "Kiev": -11.27767276763916,
+      "Istanbul": -6.588495254516602,
+      "Baltimore": -13.966072082519531
+     },
+     "first": false,
+     "tie_at_top": false,
+     "margin": -1.3793859481811523
+    }
+   ],
+   "any_tie": false
+  },
+  "P03": {
+   "cls": "Known",
+   "formulations": [
+    {
+     "prompt": "The 1972 International Geological Congress was held in",
+     "scores": {
+      "Montreal": -4.960552215576172,
+      "Houston": -8.29447078704834,
+      "Detroit": -8.958882331848145,
+      "Cleveland": -11.318523406982422
+     },
+     "first": true,
+     "tie_at_top": false,
+     "margin": 3.333918571472168
+    },
+    {
+     "prompt": "In 1972, the host city for the International Geological Congress was",
+     "scores": {
+      "Montreal": -8.147089958190918,
+      "Houston": -9.230469703674316,
+      "Detroit": -10.64903736114502,
+      "Cleveland": -11.549396514892578
+     },
+     "first": true,
+     "tie_at_top": false,
+     "margin": 1.0833797454833984
+    }
+   ],
+   "any_tie": false
+  },
+  "P04": {
+   "cls": "Known",
+   "formulations": [
+    {
+     "prompt": "The 1975 International Botanical Congress was held in",
+     "scores": {
+      "Leningrad": -7.912115097045898,
+      "Rostov": -14.083428382873535,
+      "Novgorod": -16.006107330322266,
+      "Yerevan": -20.91173553466797
+     },
+     "first": true,
+     "tie_at_top": false,
+     "margin": 6.171313285827637
+    },
+    {
+     "prompt": "In 1975, the host city for the International Botanical Congress was",
+     "scores": {
+      "Leningrad": -8.758363723754883,
+      "Rostov": -11.333904266357422,
+      "Novgorod": -13.98311710357666,
+      "Yerevan": -14.309673309326172
+     },
+     "first": true,
+     "tie_at_top": false,
+     "margin": 2.575540542602539
+    }
+   ],
+   "any_tie": false
+  }
+ },
+ "records": [
+  {
+   "item": "P02-B",
+   "pair": "P02",
+   "cond": "B",
+   "series": "IGC",
+   "year": 2004,
+   "twin_series": null,
+   "answer": "Florence",
+   "aliases": [
+    "Florence",
+    "Firenze"
+   ],
+   "distractors": [
+    "Kiev",
+    "Istanbul",
+    "Baltimore"
+   ],
+   "question": "Which city hosted the 2004 International Geological Congress?",
+   "H3": 6.6988976096184665,
+   "pmax3": 0.11663243174552917,
+   "H0": 7.780962229913206,
+   "pmax0": 0.06262407451868057,
+   "d_R1S1": -14.08151626586914,
+   "d_R2S2": -9.977409362792969,
+   "surprisal_q": 2.225544822617219,
+   "n_question_tokens": 13,
+   "greedy3": {
+    "ids": [
+     26549,
+     271
+    ],
+    "raw": " Beijing\n\n",
+    "text": " Beijing",
+    "seed": null,
+    "max_new_id": 26549
+   },
+   "greedy0": {
+    "ids": [
+     26549,
+     151643
+    ],
+    "raw": " Beijing",
+    "text": " Beijing",
+    "seed": null,
+    "max_new_id": 151643
+   },
+   "code3": {
+    "premise_status": "ACCEPTED",
+    "corrected": false,
+    "city": "Beijing",
+    "all_cities": [
+     "Beijing"
+    ],
+    "content_class": "SAME-SERIES-OTHER-YEAR",
+    "correct": false,
+    "host_of_real_event": true,
+    "category6": "FABRICATED_OR_INCORRECT",
+    "needs_adjudication": false
+   },
+   "code0": {
+    "premise_status": "ACCEPTED",
+    "corrected": false,
+    "city": "Beijing",
+    "all_cities": [
+     "Beijing"
+    ],
+    "content_class": "SAME-SERIES-OTHER-YEAR",
+    "correct": false,
+    "host_of_real_event": true,
+    "category6": "FABRICATED_OR_INCORRECT",
+    "needs_adjudication": false
+   },
+   "m2": [
+    {
+     "ids": [
+      21718,
+      271
+     ],
+     "raw": " Rome\n\n",
+     "text": " Rome",
+     "seed": 30047616,
+     "max_new_id": 21718,
+     "group": "CITY:Rome"
+    },
+    {
+     "ids": [
+      47506,
+      151643
+     ],
+     "raw": " Florence",
+     "text": " Florence",
+     "seed": 30047617,
+     "max_new_id": 151643,
+     "group": "CITY:Florence"
+    },
+    {
+     "ids": [
+      19846,
+      271
+     ],
+     "raw": " Berlin\n\n",
+     "text": " Berlin",
+     "seed": 30047618,
+     "max_new_id": 19846,
+     "group": "CITY:Berlin"
+    },
+    {
+     "ids": [
+      3686,
+      64194,
+      151643
+     ],
+     "raw": " Christchurch",
+     "text": " Christchurch",
+     "seed": 30047619,
+     "max_new_id": 151643,
+     "group": "CITY:Christchurch"
+    },
+    {
+     "ids": [
+      425,
+      23557,
+      271
+     ],
+     "raw": " Baku\n\n",
+     "text": " Baku",
+     "seed": 30047620,
+     "max_new_id": 23557,
+     "group": "UNMATCHED:baku"
+    },
+    {
+     "ids": [
+      42897,
+      271
+     ],
+     "raw": " Glasgow\n\n",
+     "text": " Glasgow",
+     "seed": 30047621,
+     "max_new_id": 42897,
+     "group": "CITY:Glasgow"
+    },
+    {
+     "ids": [
+      6515,
+      11,
+      422,
+      727,
+      382
+     ],
+     "raw": " Washington, D.C.\n\n",
+     "text": " Washington, D.C.",
+     "seed": 30047622,
+     "max_new_id": 6515,
+     "group": "CITY:Washington"
+    },
+    {
+     "ids": [
+      26549,
+      271
+     ],
+     "raw": " Beijing\n\n",
+     "text": " Beijing",
+     "seed": 30047623,
+     "max_new_id": 26549,
+     "group": "CITY:Beijing"
+    },
+    {
+     "ids": [
+      54578,
+      271
+     ],
+     "raw": " Santiago\n\n",
+     "text": " Santiago",
+     "seed": 30047624,
+     "max_new_id": 54578,
+     "group": "UNMATCHED:santiago"
+    },
+    {
+     "ids": [
+      17584,
+      271
+     ],
+     "raw": " Miami\n\n",
+     "text": " Miami",
+     "seed": 30047625,
+     "max_new_id": 17584,
+     "group": "CITY:Miami"
+    }
+   ],
+   "m2_groups": {
+    "CITY:Rome": 1,
+    "CITY:Florence": 1,
+    "CITY:Berlin": 1,
+    "CITY:Christchurch": 1,
+    "UNMATCHED:baku": 1,
+    "CITY:Glasgow": 1,
+    "CITY:Washington": 1,
+    "CITY:Beijing": 1,
+    "UNMATCHED:santiago": 1,
+    "CITY:Miami": 1
+   },
+   "m2_entropy_bits": 3.321928094887362
+  },
+  {
+   "item": "P02-C",
+   "pair": "P02",
+   "cond": "C",
+   "series": "IBC",
+   "year": 2004,
+   "twin_series": "IGC",
+   "answer": null,
+   "aliases": [],
+   "distractors": [],
+   "question": "Which city hosted the 2004 International Botanical Congress?",
+   "H3": 6.404510090622373,
+   "pmax3": 0.10840361565351486,
+   "H0": 6.917381617552165,
+   "pmax0": 0.13714957237243652,
+   "d_R1S1": -15.16800308227539,
+   "d_R2S2": -9.373847961425781,
+   "surprisal_q": 2.078899798781744,
+   "n_question_tokens": 14,
+   "greedy3": {
+    "ids": [
+     26549,
+     271
+    ],
+    "raw": " Beijing\n\n",
+    "text": " Beijing",
+    "seed": null,
+    "max_new_id": 26549
+   },
+   "greedy0": {
+    "ids": [
+     46287,
+     151643
+    ],
+    "raw": " Vienna",
+    "text": " Vienna",
+    "seed": null,
+    "max_new_id": 151643
+   },
+   "code3": {
+    "premise_status": "ACCEPTED",
+    "corrected": false,
+    "city": "Beijing",
+    "all_cities": [
+     "Beijing"
+    ],
+    "content_class": "OTHER-SERIES-OTHER-YEAR",
+    "correct": false,
+    "host_of_real_event": true,
+    "category6": "FABRICATED_OR_INCORRECT",
+    "needs_adjudication": false
+   },
+   "code0": {
+    "premise_status": "ACCEPTED",
+    "corrected": false,
+    "city": "Vienna",
+    "all_cities": [
+     "Vienna"
+    ],
+    "content_class": "SAME-SERIES-ADJACENT",
+    "correct": false,
+    "host_of_real_event": true,
+    "category6": "FABRICATED_OR_INCORRECT",
+    "needs_adjudication": false
+   },
+   "m2": [
+    {
+     "ids": [
+      794,
+      13,
+      11876,
+      271
+     ],
+     "raw": " St. Louis\n\n",
+     "text": " St. Louis",
+     "seed": 27249416,
+     "max_new_id": 11876,
+     "group": "CITY:St. Louis"
+    },
+    {
+     "ids": [
+      46287,
+      271
+     ],
+     "raw": " Vienna\n\n",
+     "text": " Vienna",
+     "seed": 27249417,
+     "max_new_id": 46287,
+     "group": "CITY:Vienna"
+    },
+    {
+     "ids": [
+      26549,
+      271
+     ],
+     "raw": " Beijing\n\n",
+     "text": " Beijing",
+     "seed": 27249418,
+     "max_new_id": 26549,
+     "group": "CITY:Beijing"
+    },
+    {
+     "ids": [
+      19846,
+      271
+     ],
+     "raw": " Berlin\n\n",
+     "text": " Berlin",
+     "seed": 27249419,
+     "max_new_id": 19846,
+     "group": "CITY:Berlin"
+    },
+    {
+     "ids": [
+      42783,
+      5311,
+      271
+     ],
+     "raw": " Kunming\n\n",
+     "text": " Kunming",
+     "seed": 27249420,
+     "max_new_id": 42783,
+     "group": "UNMATCHED:kunming"
+    },
+    {
+     "ids": [
+      46287,
+      271
+     ],
+     "raw": " Vienna\n\n",
+     "text": " Vienna",
+     "seed": 27249421,
+     "max_new_id": 46287,
+     "group": "CITY:Vienna"
+    },
+    {
+     "ids": [
+      11054,
+      370,
+      10715,
+      924,
+      271
+     ],
+     "raw": " Casablanca\n\n",
+     "text": " Casablanca",
+     "seed": 27249422,
+     "max_new_id": 11054,
+     "group": "UNMATCHED:casablanca"
+    },
+    {
+     "ids": [
+      26437,
+      271
+     ],
+     "raw": " Melbourne\n\n",
+     "text": " Melbourne",
+     "seed": 27249423,
+     "max_new_id": 26437,
+     "group": "CITY:Melbourne"
+    },
+    {
+     "ids": [
+      26437,
+      151643
+     ],
+     "raw": " Melbourne",
+     "text": " Melbourne",
+     "seed": 27249424,
+     "max_new_id": 151643,
+     "group": "CITY:Melbourne"
+    },
+    {
+     "ids": [
+      7401,
+      261,
+      459,
+      271
+     ],
+     "raw": " Macerata\n\n",
+     "text": " Macerata",
+     "seed": 27249425,
+     "max_new_id": 7401,
+     "group": "UNMATCHED:macerata"
+    }
+   ],
+   "m2_groups": {
+    "CITY:St. Louis": 1,
+    "CITY:Vienna": 2,
+    "CITY:Beijing": 1,
+    "CITY:Berlin": 1,
+    "UNMATCHED:kunming": 1,
+    "UNMATCHED:casablanca": 1,
+    "CITY:Melbourne": 2,
+    "UNMATCHED:macerata": 1
+   },
+   "m2_entropy_bits": 2.9219280948873623
+  },
+  {
+   "item": "P03-B",
+   "pair": "P03",
+   "cond": "B",
+   "series": "IGC",
+   "year": 1972,
+   "twin_series": null,
+   "answer": "Montreal",
+   "aliases": [
+    "Montreal",
+    "Montr\u00e9al"
+   ],
+   "distractors": [
+    "Houston",
+    "Detroit",
+    "Cleveland"
+   ],
+   "question": "Which city hosted the 1972 International Geological Congress?",
+   "H3": 6.802715968707706,
+   "pmax3": 0.09611473232507706,
+   "H0": 8.001836108763294,
+   "pmax0": 0.08644066751003265,
+   "d_R1S1": -15.337724685668945,
+   "d_R2S2": -9.760812759399414,
+   "surprisal_q": 2.32143213499624,
+   "n_question_tokens": 13,
+   "greedy3": {
+    "ids": [
+     46287,
+     271
+    ],
+    "raw": " Vienna\n\n",
+    "text": " Vienna",
+    "seed": null,
+    "max_new_id": 46287
+   },
+   "greedy0": {
+    "ids": [
+     46287,
+     151643
+    ],
+    "raw": " Vienna",
+    "text": " Vienna",
+    "seed": null,
+    "max_new_id": 151643
+   },
+   "code3": {
+    "premise_status": "ACCEPTED",
+    "corrected": false,
+    "city": "Vienna",
+    "all_cities": [
+     "Vienna"
+    ],
+    "content_class": "SAME-SERIES-OTHER-YEAR",
+    "correct": false,
+    "host_of_real_event": true,
+    "category6": "FABRICATED_OR_INCORRECT",
+    "needs_adjudication": false
+   },
+   "code0": {
+    "premise_status": "ACCEPTED",
+    "corrected": false,
+    "city": "Vienna",
+    "all_cities": [
+     "Vienna"
+    ],
+    "content_class": "SAME-SERIES-OTHER-YEAR",
+    "correct": false,
+    "host_of_real_event": true,
+    "category6": "FABRICATED_OR_INCORRECT",
+    "needs_adjudication": false
+   },
+   "m2": [
+    {
+     "ids": [
+      350,
+      66630,
+      11,
+      9625,
+      151643
+     ],
+     "raw": " Toulouse, France",
+     "text": " Toulouse, France",
+     "seed": 29437616,
+     "max_new_id": 151643,
+     "group": "CITY:Toulouse"
+    },
+    {
+     "ids": [
+      53368,
+      271
+     ],
+     "raw": " Istanbul\n\n",
+     "text": " Istanbul",
+     "seed": 29437617,
+     "max_new_id": 53368,
+     "group": "CITY:Istanbul"
+    },
+    {
+     "ids": [
+      21718,
+      271
+     ],
+     "raw": " Rome\n\n",
+     "text": " Rome",
+     "seed": 29437618,
+     "max_new_id": 21718,
+     "group": "CITY:Rome"
+    },
+    {
+     "ids": [
+      3822,
+      315,
+      14632,
+      271
+     ],
+     "raw": " University of Toronto\n\n",
+     "text": " University of Toronto",
+     "seed": 29437619,
+     "max_new_id": 14632,
+     "group": "CITY:Toronto"
+    },
+    {
+     "ids": [
+      22415,
+      271
+     ],
+     "raw": " Moscow\n\n",
+     "text": " Moscow",
+     "seed": 29437620,
+     "max_new_id": 22415,
+     "group": "CITY:Moscow"
+    },
+    {
+     "ids": [
+      21718,
+      151643
+     ],
+     "raw": " Rome",
+     "text": " Rome",
+     "seed": 29437621,
+     "max_new_id": 151643,
+     "group": "CITY:Rome"
+    },
+    {
+     "ids": [
+      54578,
+      271
+     ],
+     "raw": " Santiago\n\n",
+     "text": " Santiago",
+     "seed": 29437622,
+     "max_new_id": 54578,
+     "group": "UNMATCHED:santiago"
+    },
+    {
+     "ids": [
+      54578,
+      271
+     ],
+     "raw": " Santiago\n\n",
+     "text": " Santiago",
+     "seed": 29437623,
+     "max_new_id": 54578,
+     "group": "UNMATCHED:santiago"
+    },
+    {
+     "ids": [
+      21718,
+      271
+     ],
+     "raw": " Rome\n\n",
+     "text": " Rome",
+     "seed": 29437624,
+     "max_new_id": 21718,
+     "group": "CITY:Rome"
+    },
+    {
+     "ids": [
+      28615,
+      13971,
+      271
+     ],
+     "raw": " Cape Town\n\n",
+     "text": " Cape Town",
+     "seed": 29437625,
+     "max_new_id": 28615,
+     "group": "CITY:Cape Town"
+    }
+   ],
+   "m2_groups": {
+    "CITY:Toulouse": 1,
+    "CITY:Istanbul": 1,
+    "CITY:Rome": 3,
+    "CITY:Toronto": 1,
+    "CITY:Moscow": 1,
+    "UNMATCHED:santiago": 2,
+    "CITY:Cape Town": 1
+   },
+   "m2_entropy_bits": 2.6464393446710157
+  },
+  {
+   "item": "P03-C",
+   "pair": "P03",
+   "cond": "C",
+   "series": "IBC",
+   "year": 1972,
+   "twin_series": "IGC",
+   "answer": null,
+   "aliases": [],
+   "distractors": [],
+   "question": "Which city hosted the 1972 International Botanical Congress?",
+   "H3": 6.7381213488354454,
+   "pmax3": 0.17064905166625977,
+   "H0": 7.595569059866719,
+   "pmax0": 0.12600792944431305,
+   "d_R1S1": -16.21358299255371,
+   "d_R2S2": -9.156270980834961,
+   "surprisal_q": 2.106096198782325,
+   "n_question_tokens": 14,
+   "greedy3": {
+    "ids": [
+     46287,
+     271
+    ],
+    "raw": " Vienna\n\n",
+    "text": " Vienna",
+    "seed": null,
+    "max_new_id": 46287
+   },
+   "greedy0": {
+    "ids": [
+     46287,
+     151643
+    ],
+    "raw": " Vienna",
+    "text": " Vienna",
+    "seed": null,
+    "max_new_id": 151643
+   },
+   "code3": {
+    "premise_status": "ACCEPTED",
+    "corrected": false,
+    "city": "Vienna",
+    "all_cities": [
+     "Vienna"
+    ],
+    "content_class": "SAME-SERIES-OTHER-YEAR",
+    "correct": false,
+    "host_of_real_event": true,
+    "category6": "FABRICATED_OR_INCORRECT",
+    "needs_adjudication": false
+   },
+   "code0": {
+    "premise_status": "ACCEPTED",
+    "corrected": false,
+    "city": "Vienna",
+    "all_cities": [
+     "Vienna"
+    ],
+    "content_class": "SAME-SERIES-OTHER-YEAR",
+    "correct": false,
+    "host_of_real_event": true,
+    "category6": "FABRICATED_OR_INCORRECT",
+    "needs_adjudication": false
+   },
+   "m2": [
+    {
+     "ids": [
+      52368,
+      271
+     ],
+     "raw": " Rochester\n\n",
+     "text": " Rochester",
+     "seed": 30193816,
+     "max_new_id": 52368,
+     "group": "UNMATCHED:rochester"
+    },
+    {
+     "ids": [
+      46204,
+      271
+     ],
+     "raw": " Munich\n\n",
+     "text": " Munich",
+     "seed": 30193817,
+     "max_new_id": 46204,
+     "group": "CITY:Munich"
+    },
+    {
+     "ids": [
+      52695,
+      271
+     ],
+     "raw": " Tehran\n\n",
+     "text": " Tehran",
+     "seed": 30193818,
+     "max_new_id": 52695,
+     "group": "CITY:Tehran"
+    },
+    {
+     "ids": [
+      647,
+      86651,
+      271
+     ],
+     "raw": " Viena\n\n",
+     "text": " Viena",
+     "seed": 30193819,
+     "max_new_id": 86651,
+     "group": "UNMATCHED:viena"
+    },
+    {
+     "ids": [
+      54578,
+      271
+     ],
+     "raw": " Santiago\n\n",
+     "text": " Santiago",
+     "seed": 30193820,
+     "max_new_id": 54578,
+     "group": "UNMATCHED:santiago"
+    },
+    {
+     "ids": [
+      46287,
+      271
+     ],
+     "raw": " Vienna\n\n",
+     "text": " Vienna",
+     "seed": 30193821,
+     "max_new_id": 46287,
+     "group": "CITY:Vienna"
+    },
+    {
+     "ids": [
+      26549,
+      271
+     ],
+     "raw": " Beijing\n\n",
+     "text": " Beijing",
+     "seed": 30193822,
+     "max_new_id": 26549,
+     "group": "CITY:Beijing"
+    },
+    {
+     "ids": [
+      85241,
+      56860,
+      4311,
+      271
+     ],
+     "raw": " Kumamoto City\n\n",
+     "text": " Kumamoto City",
+     "seed": 30193823,
+     "max_new_id": 85241,
+     "group": "CITY:Kumamoto"
+    },
+    {
+     "ids": [
+      68790,
+      271
+     ],
+     "raw": " Canberra\n\n",
+     "text": " Canberra",
+     "seed": 30193824,
+     "max_new_id": 68790,
+     "group": "CITY:Canberra"
+    },
+    {
+     "ids": [
+      45826,
+      271
+     ],
+     "raw": " Athens\n\n",
+     "text": " Athens",
+     "seed": 30193825,
+     "max_new_id": 45826,
+     "group": "CITY:Athens"
+    }
+   ],
+   "m2_groups": {
+    "UNMATCHED:rochester": 1,
+    "CITY:Munich": 1,
+    "CITY:Tehran": 1,
+    "UNMATCHED:viena": 1,
+    "UNMATCHED:santiago": 1,
+    "CITY:Vienna": 1,
+    "CITY:Beijing": 1,
+    "CITY:Kumamoto": 1,
+    "CITY:Canberra": 1,
+    "CITY:Athens": 1
+   },
+   "m2_entropy_bits": 3.321928094887362
+  },
+  {
+   "item": "P04-B",
+   "pair": "P04",
+   "cond": "B",
+   "series": "IBC",
+   "year": 1975,
+   "twin_series": null,
+   "answer": "Leningrad",
+   "aliases": [
+    "Leningrad",
+    "St. Petersburg",
+    "Saint Petersburg"
+   ],
+   "distractors": [
+    "Rostov",
+    "Novgorod",
+    "Yerevan"
+   ],
+   "question": "Which city hosted the 1975 International Botanical Congress?",
+   "H3": 6.853979181415685,
+   "pmax3": 0.14310702681541443,
+   "H0": 8.001273381529671,
+   "pmax0": 0.08490335941314697,
+   "d_R1S1": -15.993395805358887,
+   "d_R2S2": -9.10375690460205,
+   "surprisal_q": 2.055358634995563,
+   "n_question_tokens": 14,
+   "greedy3": {
+    "ids": [
+     46287,
+     271
+    ],
+    "raw": " Vienna\n\n",
+    "text": " Vienna",
+    "seed": null,
+    "max_new_id": 46287
+   },
+   "greedy0": {
+    "ids": [
+     46287,
+     151643
+    ],
+    "raw": " Vienna",
+    "text": " Vienna",
+    "seed": null,
+    "max_new_id": 151643
+   },
+   "code3": {
+    "premise_status": "ACCEPTED",
+    "corrected": false,
+    "city": "Vienna",
+    "all_cities": [
+     "Vienna"
+    ],
+    "content_class": "SAME-SERIES-OTHER-YEAR",
+    "correct": false,
+    "host_of_real_event": true,
+    "category6": "FABRICATED_OR_INCORRECT",
+    "needs_adjudication": false
+   },
+   "code0": {
+    "premise_status": "ACCEPTED",
+    "corrected": false,
+    "city": "Vienna",
+    "all_cities": [
+     "Vienna"
+    ],
+    "content_class": "SAME-SERIES-OTHER-YEAR",
+    "correct": false,
+    "host_of_real_event": true,
+    "category6": "FABRICATED_OR_INCORRECT",
+    "needs_adjudication": false
+   },
+   "m2": [
+    {
+     "ids": [
+      81022,
+      151643
+     ],
+     "raw": " Kyoto",
+     "text": " Kyoto",
+     "seed": 21511616,
+     "max_new_id": 151643,
+     "group": "CITY:Kyoto"
+    },
+    {
+     "ids": [
+      63061,
+      151643
+     ],
+     "raw": " Copenhagen",
+     "text": " Copenhagen",
+     "seed": 21511617,
+     "max_new_id": 151643,
+     "group": "CITY:Copenhagen"
+    },
+    {
+     "ids": [
+      81022,
+      271
+     ],
+     "raw": " Kyoto\n\n",
+     "text": " Kyoto",
+     "seed": 21511618,
+     "max_new_id": 81022,
+     "group": "CITY:Kyoto"
+    },
+    {
+     "ids": [
+      4929,
+      355,
+      20368,
+      271
+     ],
+     "raw": " Lausanne\n\n",
+     "text": " Lausanne",
+     "seed": 21511619,
+     "max_new_id": 20368,
+     "group": "CITY:Lausanne"
+    },
+    {
+     "ids": [
+      54578,
+      271
+     ],
+     "raw": " Santiago\n\n",
+     "text": " Santiago",
+     "seed": 21511620,
+     "max_new_id": 54578,
+     "group": "UNMATCHED:santiago"
+    },
+    {
+     "ids": [
+      13481,
+      77,
+      11,
+      9856,
+      151643
+     ],
+     "raw": " Bonn, Germany",
+     "text": " Bonn, Germany",
+     "seed": 21511621,
+     "max_new_id": 151643,
+     "group": "UNMATCHED:bonn germany"
+    },
+    {
+     "ids": [
+      26437,
+      271
+     ],
+     "raw": " Melbourne\n\n",
+     "text": " Melbourne",
+     "seed": 21511622,
+     "max_new_id": 26437,
+     "group": "CITY:Melbourne"
+    },
+    {
+     "ids": [
+      26549,
+      271
+     ],
+     "raw": " Beijing\n\n",
+     "text": " Beijing",
+     "seed": 21511623,
+     "max_new_id": 26549,
+     "group": "CITY:Beijing"
+    },
+    {
+     "ids": [
+      68790,
+      271
+     ],
+     "raw": " Canberra\n\n",
+     "text": " Canberra",
+     "seed": 21511624,
+     "max_new_id": 68790,
+     "group": "CITY:Canberra"
+    },
+    {
+     "ids": [
+      794,
+      13,
+      11876,
+      271
+     ],
+     "raw": " St. Louis\n\n",
+     "text": " St. Louis",
+     "seed": 21511625,
+     "max_new_id": 11876,
+     "group": "CITY:St. Louis"
+    }
+   ],
+   "m2_groups": {
+    "CITY:Kyoto": 2,
+    "CITY:Copenhagen": 1,
+    "CITY:Lausanne": 1,
+    "UNMATCHED:santiago": 1,
+    "UNMATCHED:bonn germany": 1,
+    "CITY:Melbourne": 1,
+    "CITY:Beijing": 1,
+    "CITY:Canberra": 1,
+    "CITY:St. Louis": 1
+   },
+   "m2_entropy_bits": 3.121928094887362
+  },
+  {
+   "item": "P04-C",
+   "pair": "P04",
+   "cond": "C",
+   "series": "ICM",
+   "year": 1975,
+   "twin_series": "IBC",
+   "answer": null,
+   "aliases": [],
+   "distractors": [],
+   "question": "Which city hosted the 1975 International Congress of Mathematicians?",
+   "H3": 4.528457293672925,
+   "pmax3": 0.29927924275398254,
+   "H0": 6.449954098355757,
+   "pmax0": 0.1357276886701584,
+   "d_R1S1": -13.479433059692383,
+   "d_R2S2": -9.900964736938477,
+   "surprisal_q": 1.6234553629532456,
+   "n_question_tokens": 15,
+   "greedy3": {
+    "ids": [
+     72176,
+     271
+    ],
+    "raw": " Warsaw\n\n",
+    "text": " Warsaw",
+    "seed": null,
+    "max_new_id": 72176
+   },
+   "greedy0": {
+    "ids": [
+     72176,
+     151643
+    ],
+    "raw": " Warsaw",
+    "text": " Warsaw",
+    "seed": null,
+    "max_new_id": 151643
+   },
+   "code3": {
+    "premise_status": "ACCEPTED",
+    "corrected": false,
+    "city": "Warsaw",
+    "all_cities": [
+     "Warsaw"
+    ],
+    "content_class": "SAME-SERIES-OTHER-YEAR",
+    "correct": false,
+    "host_of_real_event": true,
+    "category6": "FABRICATED_OR_INCORRECT",
+    "needs_adjudication": false
+   },
+   "code0": {
+    "premise_status": "ACCEPTED",
+    "corrected": false,
+    "city": "Warsaw",
+    "all_cities": [
+     "Warsaw"
+    ],
+    "content_class": "SAME-SERIES-OTHER-YEAR",
+    "correct": false,
+    "host_of_real_event": true,
+    "category6": "FABRICATED_OR_INCORRECT",
+    "needs_adjudication": false
+   },
+   "m2": [
+    {
+     "ids": [
+      7828,
+      6937,
+      271
+     ],
+     "raw": " Belgrade\n\n",
+     "text": " Belgrade",
+     "seed": 21860716,
+     "max_new_id": 7828,
+     "group": "CITY:Belgrade"
+    },
+    {
+     "ids": [
+      8907,
+      75,
+      24217,
+      271
+     ],
+     "raw": " Berl\u00edn\n\n",
+     "text": " Berl\u00edn",
+     "seed": 21860717,
+     "max_new_id": 24217,
+     "group": "CITY:Berlin"
+    },
+    {
+     "ids": [
+      21718,
+      151643
+     ],
+     "raw": " Rome",
+     "text": " Rome",
+     "seed": 21860718,
+     "max_new_id": 151643,
+     "group": "CITY:Rome"
+    },
+    {
+     "ids": [
+      56133,
+      11,
+      14867,
+      271
+     ],
+     "raw": " Alexandria, Egypt\n\n",
+     "text": " Alexandria, Egypt",
+     "seed": 21860719,
+     "max_new_id": 56133,
+     "group": "UNMATCHED:alexandria egypt"
+    },
+    {
+     "ids": [
+      76334,
+      382
+     ],
+     "raw": " Helsinki.\n\n",
+     "text": " Helsinki.",
+     "seed": 21860720,
+     "max_new_id": 76334,
+     "group": "CITY:Helsinki"
+    },
+    {
+     "ids": [
+      29513,
+      271
+     ],
+     "raw": " Montreal\n\n",
+     "text": " Montreal",
+     "seed": 21860721,
+     "max_new_id": 29513,
+     "group": "CITY:Montreal"
+    },
+    {
+     "ids": [
+      14968,
+      89,
+      14077,
+      271
+     ],
+     "raw": " Warszawa\n\n",
+     "text": " Warszawa",
+     "seed": 21860722,
+     "max_new_id": 14968,
+     "group": "UNMATCHED:warszawa"
+    },
+    {
+     "ids": [
+      22415,
+      271
+     ],
+     "raw": " Moscow\n\n",
+     "text": " Moscow",
+     "seed": 21860723,
+     "max_new_id": 22415,
+     "group": "CITY:Moscow"
+    },
+    {
+     "ids": [
+      72176,
+      271
+     ],
+     "raw": " Warsaw\n\n",
+     "text": " Warsaw",
+     "seed": 21860724,
+     "max_new_id": 72176,
+     "group": "CITY:Warsaw"
+    },
+    {
+     "ids": [
+      37741,
+      271
+     ],
+     "raw": " Amsterdam\n\n",
+     "text": " Amsterdam",
+     "seed": 21860725,
+     "max_new_id": 37741,
+     "group": "CITY:Amsterdam"
+    }
+   ],
+   "m2_groups": {
+    "CITY:Belgrade": 1,
+    "CITY:Berlin": 1,
+    "CITY:Rome": 1,
+    "UNMATCHED:alexandria egypt": 1,
+    "CITY:Helsinki": 1,
+    "CITY:Montreal": 1,
+    "UNMATCHED:warszawa": 1,
+    "CITY:Moscow": 1,
+    "CITY:Warsaw": 1,
+    "CITY:Amsterdam": 1
+   },
+   "m2_entropy_bits": 3.321928094887362
+  },
+  {
+   "item": "AP01",
+   "pair": null,
+   "cond": "A",
+   "series": "OLYMPICS",
+   "year": 1994,
+   "twin_series": null,
+   "answer": "Lillehammer",
+   "aliases": [
+    "Lillehammer"
+   ],
+   "distractors": [],
+   "question": "Which city hosted the 1994 Winter Olympics?",
+   "H3": 1.5691715982814256,
+   "pmax3": 0.7512840628623962,
+   "H0": 3.6334103915447216,
+   "pmax0": 0.3048167824745178,
+   "d_R1S1": -21.286986351013184,
+   "d_R2S2": -8.599691390991211,
+   "surprisal_q": 1.179984721665581,
+   "n_question_tokens": 12,
+   "greedy3": {
+    "ids": [
+     444,
+     4517,
+     45334,
+     271
+    ],
+    "raw": " Lillehammer\n\n",
+    "text": " Lillehammer",
+    "seed": null,
+    "max_new_id": 45334
+   },
+   "greedy0": {
+    "ids": [
+     27040,
+     11678,
+     4311,
+     11,
+     22389,
+     151643
+    ],
+    "raw": " Salt Lake City, Utah",
+    "text": " Salt Lake City, Utah",
+    "seed": null,
+    "max_new_id": 151643
+   },
+   "code3": {
+    "premise_status": "ACCEPTED",
+    "corrected": false,
+    "city": "Lillehammer",
+    "all_cities": [
+     "Lillehammer"
+    ],
+    "content_class": null,
+    "correct": true,
+    "host_of_real_event": false,
+    "category6": "CORRECT_ANSWER",
+    "needs_adjudication": false
+   },
+   "code0": {
+    "premise_status": "ACCEPTED",
+    "corrected": false,
+    "city": "Salt Lake City",
+    "all_cities": [
+     "Salt Lake City"
+    ],
+    "content_class": null,
+    "correct": false,
+    "host_of_real_event": false,
+    "category6": "FABRICATED_OR_INCORRECT",
+    "needs_adjudication": false
+   },
+   "m2": [
+    {
+     "ids": [
+      29062,
+      5652,
+      271
+     ],
+     "raw": " Nagano\n\n",
+     "text": " Nagano",
+     "seed": 22400516,
+     "max_new_id": 29062,
+     "group": "CITY:Nagano"
+    },
+    {
+     "ids": [
+      444,
+      4517,
+      45334,
+      271
+     ],
+     "raw": " Lillehammer\n\n",
+     "text": " Lillehammer",
+     "seed": 22400517,
+     "max_new_id": 45334,
+     "group": "CITY:Lillehammer"
+    },
+    {
+     "ids": [
+      444,
+      4517,
+      45334,
+      271
+     ],
+     "raw": " Lillehammer\n\n",
+     "text": " Lillehammer",
+     "seed": 22400518,
+     "max_new_id": 45334,
+     "group": "CITY:Lillehammer"
+    },
+    {
+     "ids": [
+      444,
+      4517,
+      45334,
+      11,
+      31503,
+      271
+     ],
+     "raw": " Lillehammer, Norway\n\n",
+     "text": " Lillehammer, Norway",
+     "seed": 22400519,
+     "max_new_id": 45334,
+     "group": "CITY:Lillehammer"
+    },
+    {
+     "ids": [
+      444,
+      4517,
+      45334,
+      11,
+      31503,
+      271
+     ],
+     "raw": " Lillehammer, Norway\n\n",
+     "text": " Lillehammer, Norway",
+     "seed": 22400520,
+     "max_new_id": 45334,
+     "group": "CITY:Lillehammer"
+    },
+    {
+     "ids": [
+      444,
+      4517,
+      45334,
+      271
+     ],
+     "raw": " Lillehammer\n\n",
+     "text": " Lillehammer",
+     "seed": 22400521,
+     "max_new_id": 45334,
+     "group": "CITY:Lillehammer"
+    },
+    {
+     "ids": [
+      444,
+      4517,
+      45334,
+      11,
+      31503,
+      271
+     ],
+     "raw": " Lillehammer, Norway\n\n",
+     "text": " Lillehammer, Norway",
+     "seed": 22400522,
+     "max_new_id": 45334,
+     "group": "CITY:Lillehammer"
+    },
+    {
+     "ids": [
+      451,
+      135793,
+      71063,
+      930,
+      6642,
+      151643
+     ],
+     "raw": " N \u05d0\u05d9\u05e9 oprsonki",
+     "text": " N \u05d0\u05d9\u05e9 oprsonki",
+     "seed": 22400523,
+     "max_new_id": 151643,
+     "group": "UNMATCHED:n oprsonki"
+    },
+    {
+     "ids": [
+      29062,
+      5652,
+      11,
+      6323,
+      382
+     ],
+     "raw": " Nagano, Japan.\n\n",
+     "text": " Nagano, Japan.",
+     "seed": 22400524,
+     "max_new_id": 29062,
+     "group": "CITY:Nagano"
+    },
+    {
+     "ids": [
+      444,
+      4517,
+      45334,
+      271
+     ],
+     "raw": " Lillehammer\n\n",
+     "text": " Lillehammer",
+     "seed": 22400525,
+     "max_new_id": 45334,
+     "group": "CITY:Lillehammer"
+    }
+   ],
+   "m2_groups": {
+    "CITY:Nagano": 2,
+    "CITY:Lillehammer": 7,
+    "UNMATCHED:n oprsonki": 1
+   },
+   "m2_entropy_bits": 1.1567796494470395
+  },
+  {
+   "item": "AP02",
+   "pair": null,
+   "cond": "A",
+   "series": "OLYMPICS",
+   "year": 1998,
+   "twin_series": null,
+   "answer": "Nagano",
+   "aliases": [
+    "Nagano"
+   ],
+   "distractors": [],
+   "question": "Which city hosted the 1998 Winter Olympics?",
+   "H3": 1.4288680657162207,
+   "pmax3": 0.5381894111633301,
+   "H0": 2.531465780688797,
+   "pmax0": 0.6231386661529541,
+   "d_R1S1": -20.11862087249756,
+   "d_R2S2": -8.642974853515625,
+   "surprisal_q": 1.1737305022155244,
+   "n_question_tokens": 12,
+   "greedy3": {
+    "ids": [
+     29062,
+     5652,
+     271
+    ],
+    "raw": " Nagano\n\n",
+    "text": " Nagano",
+    "seed": null,
+    "max_new_id": 29062
+   },
+   "greedy0": {
+    "ids": [
+     27040,
+     11678,
+     4311,
+     151643
+    ],
+    "raw": " Salt Lake City",
+    "text": " Salt Lake City",
+    "seed": null,
+    "max_new_id": 151643
+   },
+   "code3": {
+    "premise_status": "ACCEPTED",
+    "corrected": false,
+    "city": "Nagano",
+    "all_cities": [
+     "Nagano"
+    ],
+    "content_class": null,
+    "correct": true,
+    "host_of_real_event": false,
+    "category6": "CORRECT_ANSWER",
+    "needs_adjudication": false
+   },
+   "code0": {
+    "premise_status": "ACCEPTED",
+    "corrected": false,
+    "city": "Salt Lake City",
+    "all_cities": [
+     "Salt Lake City"
+    ],
+    "content_class": null,
+    "correct": false,
+    "host_of_real_event": false,
+    "category6": "FABRICATED_OR_INCORRECT",
+    "needs_adjudication": false
+   },
+   "m2": [
+    {
+     "ids": [
+      29062,
+      5652,
+      11,
+      6323,
+      271
+     ],
+     "raw": " Nagano, Japan\n\n",
+     "text": " Nagano, Japan",
+     "seed": 24312716,
+     "max_new_id": 29062,
+     "group": "CITY:Nagano"
+    },
+    {
+     "ids": [
+      27040,
+      11678,
+      4311,
+      271
+     ],
+     "raw": " Salt Lake City\n\n",
+     "text": " Salt Lake City",
+     "seed": 24312717,
+     "max_new_id": 27040,
+     "group": "CITY:Salt Lake City"
+    },
+    {
+     "ids": [
+      27040,
+      11678,
+      4311,
+      382
+     ],
+     "raw": " Salt Lake City.\n\n",
+     "text": " Salt Lake City.",
+     "seed": 24312718,
+     "max_new_id": 27040,
+     "group": "CITY:Salt Lake City"
+    },
+    {
+     "ids": [
+      29062,
+      5652,
+      271
+     ],
+     "raw": " Nagano\n\n",
+     "text": " Nagano",
+     "seed": 24312719,
+     "max_new_id": 29062,
+     "group": "CITY:Nagano"
+    },
+    {
+     "ids": [
+      29062,
+      5652,
+      271
+     ],
+     "raw": " Nagano\n\n",
+     "text": " Nagano",
+     "seed": 24312720,
+     "max_new_id": 29062,
+     "group": "CITY:Nagano"
+    },
+    {
+     "ids": [
+      27040,
+      11678,
+      4311,
+      11,
+      22389,
+      151643
+     ],
+     "raw": " Salt Lake City, Utah",
+     "text": " Salt Lake City, Utah",
+     "seed": 24312721,
+     "max_new_id": 151643,
+     "group": "CITY:Salt Lake City"
+    },
+    {
+     "ids": [
+      29062,
+      5652,
+      271
+     ],
+     "raw": " Nagano\n\n",
+     "text": " Nagano",
+     "seed": 24312722,
+     "max_new_id": 29062,
+     "group": "CITY:Nagano"
+    },
+    {
+     "ids": [
+      29062,
+      5652,
+      271
+     ],
+     "raw": " Nagano\n\n",
+     "text": " Nagano",
+     "seed": 24312723,
+     "max_new_id": 29062,
+     "group": "CITY:Nagano"
+    },
+    {
+     "ids": [
+      29062,
+      5652,
+      271
+     ],
+     "raw": " Nagano\n\n",
+     "text": " Nagano",
+     "seed": 24312724,
+     "max_new_id": 29062,
+     "group": "CITY:Nagano"
+    },
+    {
+     "ids": [
+      27040,
+      11678,
+      4311,
+      151643
+     ],
+     "raw": " Salt Lake City",
+     "text": " Salt Lake City",
+     "seed": 24312725,
+     "max_new_id": 151643,
+     "group": "CITY:Salt Lake City"
+    }
+   ],
+   "m2_groups": {
+    "CITY:Nagano": 6,
+    "CITY:Salt Lake City": 4
+   },
+   "m2_entropy_bits": 0.9709505944546686
+  },
+  {
+   "item": "AP03",
+   "pair": null,
+   "cond": "A",
+   "series": "OLYMPICS",
+   "year": 2002,
+   "twin_series": null,
+   "answer": "Salt Lake City",
+   "aliases": [
+    "Salt Lake City"
+   ],
+   "distractors": [],
+   "question": "Which city hosted the 2002 Winter Olympics?",
+   "H3": 1.7910813286376601,
+   "pmax3": 0.675646185874939,
+   "H0": 2.8121550535263187,
+   "pmax0": 0.6343045830726624,
+   "d_R1S1": -19.60430145263672,
+   "d_R2S2": -9.105545043945312,
+   "surprisal_q": 0.9492151704616845,
+   "n_question_tokens": 12,
+   "greedy3": {
+    "ids": [
+     27040,
+     11678,
+     4311,
+     271
+    ],
+    "raw": " Salt Lake City\n\n",
+    "text": " Salt Lake City",
+    "seed": null,
+    "max_new_id": 27040
+   },
+   "greedy0": {
+    "ids": [
+     27040,
+     11678,
+     4311,
+     151643
+    ],
+    "raw": " Salt Lake City",
+    "text": " Salt Lake City",
+    "seed": null,
+    "max_new_id": 151643
+   },
+   "code3": {
+    "premise_status": "ACCEPTED",
+    "corrected": false,
+    "city": "Salt Lake City",
+    "all_cities": [
+     "Salt Lake City"
+    ],
+    "content_class": null,
+    "correct": true,
+    "host_of_real_event": false,
+    "category6": "CORRECT_ANSWER",
+    "needs_adjudication": false
+   },
+   "code0": {
+    "premise_status": "ACCEPTED",
+    "corrected": false,
+    "city": "Salt Lake City",
+    "all_cities": [
+     "Salt Lake City"
+    ],
+    "content_class": null,
+    "correct": true,
+    "host_of_real_event": false,
+    "category6": "CORRECT_ANSWER",
+    "needs_adjudication": false
+   },
+   "m2": [
+    {
+     "ids": [
+      29062,
+      5652,
+      11,
+      6323,
+      271
+     ],
+     "raw": " Nagano, Japan\n\n",
+     "text": " Nagano, Japan",
+     "seed": 29573216,
+     "max_new_id": 29062,
+     "group": "CITY:Nagano"
+    },
+    {
+     "ids": [
+      8705,
+      258,
+      271
+     ],
+     "raw": " Turin\n\n",
+     "text": " Turin",
+     "seed": 29573217,
+     "max_new_id": 8705,
+     "group": "CITY:Turin"
+    },
+    {
+     "ids": [
+      27040,
+      11678,
+      4311,
+      271
+     ],
+     "raw": " Salt Lake City\n\n",
+     "text": " Salt Lake City",
+     "seed": 29573218,
+     "max_new_id": 27040,
+     "group": "CITY:Salt Lake City"
+    },
+    {
+     "ids": [
+      27040,
+      11678,
+      4311,
+      271
+     ],
+     "raw": " Salt Lake City\n\n",
+     "text": " Salt Lake City",
+     "seed": 29573219,
+     "max_new_id": 27040,
+     "group": "CITY:Salt Lake City"
+    },
+    {
+     "ids": [
+      27040,
+      11678,
+      4311,
+      271
+     ],
+     "raw": " Salt Lake City\n\n",
+     "text": " Salt Lake City",
+     "seed": 29573220,
+     "max_new_id": 27040,
+     "group": "CITY:Salt Lake City"
+    },
+    {
+     "ids": [
+      1345,
+      823,
+      1466,
+      12495,
+      271
+     ],
+     "raw": " Seefahnen\n\n",
+     "text": " Seefahnen",
+     "seed": 29573221,
+     "max_new_id": 12495,
+     "group": "UNMATCHED:seefahnen"
+    },
+    {
+     "ids": [
+      27040,
+      11678,
+      4311,
+      271
+     ],
+     "raw": " Salt Lake City\n\n",
+     "text": " Salt Lake City",
+     "seed": 29573222,
+     "max_new_id": 27040,
+     "group": "CITY:Salt Lake City"
+    },
+    {
+     "ids": [
+      27040,
+      11678,
+      4311,
+      271
+     ],
+     "raw": " Salt Lake City\n\n",
+     "text": " Salt Lake City",
+     "seed": 29573223,
+     "max_new_id": 27040,
+     "group": "CITY:Salt Lake City"
+    },
+    {
+     "ids": [
+      27040,
+      11678,
+      4311,
+      271
+     ],
+     "raw": " Salt Lake City\n\n",
+     "text": " Salt Lake City",
+     "seed": 29573224,
+     "max_new_id": 27040,
+     "group": "CITY:Salt Lake City"
+    },
+    {
+     "ids": [
+      27040,
+      11678,
+      4311,
+      271
+     ],
+     "raw": " Salt Lake City\n\n",
+     "text": " Salt Lake City",
+     "seed": 29573225,
+     "max_new_id": 27040,
+     "group": "CITY:Salt Lake City"
+    }
+   ],
+   "m2_groups": {
+    "CITY:Nagano": 1,
+    "CITY:Turin": 1,
+    "CITY:Salt Lake City": 7,
+    "UNMATCHED:seefahnen": 1
+   },
+   "m2_entropy_bits": 1.3567796494470397
+  },
+  {
+   "item": "DP01",
+   "pair": null,
+   "cond": "D",
+   "series": "ICM",
+   "year": 2018,
+   "twin_series": null,
+   "answer": null,
+   "aliases": [],
+   "distractors": [],
+   "question": "Which city on the Moon hosted the 2018 International Congress of Mathematicians?",
+   "H3": 6.6005097747128705,
+   "pmax3": 0.15753473341464996,
+   "H0": 7.66103666367476,
+   "pmax0": 0.15248697996139526,
+   "d_R1S1": -11.256757736206055,
+   "d_R2S2": -7.834284782409668,
+   "surprisal_q": 2.031109034937496,
+   "n_question_tokens": 18,
+   "greedy3": {
+    "ids": [
+     26549,
+     271
+    ],
+    "raw": " Beijing\n\n",
+    "text": " Beijing",
+    "seed": null,
+    "max_new_id": 26549
+   },
+   "greedy0": {
+    "ids": [
+     26549,
+     151643
+    ],
+    "raw": " Beijing",
+    "text": " Beijing",
+    "seed": null,
+    "max_new_id": 151643
+   },
+   "code3": {
+    "premise_status": "ACCEPTED",
+    "corrected": false,
+    "city": "Beijing",
+    "all_cities": [
+     "Beijing"
+    ],
+    "content_class": "SAME-SERIES-OTHER-YEAR",
+    "correct": false,
+    "host_of_real_event": true,
+    "category6": "FABRICATED_OR_INCORRECT",
+    "needs_adjudication": false
+   },
+   "code0": {
+    "premise_status": "ACCEPTED",
+    "corrected": false,
+    "city": "Beijing",
+    "all_cities": [
+     "Beijing"
+    ],
+    "content_class": "SAME-SERIES-OTHER-YEAR",
+    "correct": false,
+    "host_of_real_event": true,
+    "category6": "FABRICATED_OR_INCORRECT",
+    "needs_adjudication": false
+   },
+   "m2": [
+    {
+     "ids": [
+      57858,
+      271
+     ],
+     "raw": " Oslo\n\n",
+     "text": " Oslo",
+     "seed": 24728016,
+     "max_new_id": 57858,
+     "group": "CITY:Oslo"
+    },
+    {
+     "ids": [
+      52773,
+      3283,
+      271
+     ],
+     "raw": " unnamed city\n\n",
+     "text": " unnamed city",
+     "seed": 24728017,
+     "max_new_id": 52773,
+     "group": "UNMATCHED:unnamed city"
+    },
+    {
+     "ids": [
+      33349,
+      644,
+      331,
+      359,
+      24069,
+      11,
+      892,
+      572,
+      27280,
+      356,
+      22457,
+      84992,
+      4311,
+      4092,
+      311,
+      56711
+     ],
+     "raw": " Zhongchun Village, which was renamed Cislunar City according to lunar",
+     "text": " Zhongchun Village, which was renamed Cislunar City according to lunar",
+     "seed": 24728018,
+     "max_new_id": 84992,
+     "group": "UNMATCHED:zhongchun village which was renamed cislunar city according to lunar"
+    },
+    {
+     "ids": [
+      90985,
+      19274,
+      64,
+      271
+     ],
+     "raw": " Numero acqua\n\n",
+     "text": " Numero acqua",
+     "seed": 24728019,
+     "max_new_id": 90985,
+     "group": "UNMATCHED:numero acqua"
+    },
+    {
+     "ids": [
+      26549,
+      271
+     ],
+     "raw": " Beijing\n\n",
+     "text": " Beijing",
+     "seed": 24728020,
+     "max_new_id": 26549,
+     "group": "CITY:Beijing"
+    },
+    {
+     "ids": [
+      36130,
+      9917,
+      271
+     ],
+     "raw": " Wuhan\n\n",
+     "text": " Wuhan",
+     "seed": 24728021,
+     "max_new_id": 36130,
+     "group": "CITY:Wuhan"
+    },
+    {
+     "ids": [
+      4929,
+      49805,
+      4311,
+      271
+     ],
+     "raw": " La Luna City\n\n",
+     "text": " La Luna City",
+     "seed": 24728022,
+     "max_new_id": 49805,
+     "group": "UNMATCHED:la luna city"
+    },
+    {
+     "ids": [
+      28615,
+      4261,
+      271
+     ],
+     "raw": " Cape York\n\n",
+     "text": " Cape York",
+     "seed": 24728023,
+     "max_new_id": 28615,
+     "group": "CITY:York"
+    },
+    {
+     "ids": [
+      26549,
+      271
+     ],
+     "raw": " Beijing\n\n",
+     "text": " Beijing",
+     "seed": 24728024,
+     "max_new_id": 26549,
+     "group": "CITY:Beijing"
+    },
+    {
+     "ids": [
+      85083,
+      278,
+      2624,
+      271
+     ],
+     "raw": " Ningaloo\n\n",
+     "text": " Ningaloo",
+     "seed": 24728025,
+     "max_new_id": 85083,
+     "group": "UNMATCHED:ningaloo"
+    }
+   ],
+   "m2_groups": {
+    "CITY:Oslo": 1,
+    "UNMATCHED:unnamed city": 1,
+    "UNMATCHED:zhongchun village which was renamed cislunar city according to lunar": 1,
+    "UNMATCHED:numero acqua": 1,
+    "CITY:Beijing": 2,
+    "CITY:Wuhan": 1,
+    "UNMATCHED:la luna city": 1,
+    "CITY:York": 1,
+    "UNMATCHED:ningaloo": 1
+   },
+   "m2_entropy_bits": 3.121928094887362
+  },
+  {
+   "item": "DP02",
+   "pair": null,
+   "cond": "D",
+   "series": "IGC",
+   "year": 1976,
+   "twin_series": null,
+   "answer": null,
+   "aliases": [],
+   "distractors": [],
+   "question": "Which city hosted the 1976 International Geological Congress, held on 30 February 1976?",
+   "H3": 7.6750346755937855,
+   "pmax3": 0.09363812953233719,
+   "H0": 8.559600611013106,
+   "pmax0": 0.03973521292209625,
+   "d_R1S1": -13.268115997314453,
+   "d_R2S2": -9.23514461517334,
+   "surprisal_q": 2.2680288054421545,
+   "n_question_tokens": 25,
+   "greedy3": {
+    "ids": [
+     12095,
+     271
+    ],
+    "raw": " Paris\n\n",
+    "text": " Paris",
+    "seed": null,
+    "max_new_id": 12095
+   },
+   "greedy0": {
+    "ids": [
+     12095,
+     151643
+    ],
+    "raw": " Paris",
+    "text": " Paris",
+    "seed": null,
+    "max_new_id": 151643
+   },
+   "code3": {
+    "premise_status": "ACCEPTED",
+    "corrected": false,
+    "city": "Paris",
+    "all_cities": [
+     "Paris"
+    ],
+    "content_class": "SAME-SERIES-OTHER-YEAR",
+    "correct": false,
+    "host_of_real_event": true,
+    "category6": "FABRICATED_OR_INCORRECT",
+    "needs_adjudication": false
+   },
+   "code0": {
+    "premise_status": "ACCEPTED",
+    "corrected": false,
+    "city": "Paris",
+    "all_cities": [
+     "Paris"
+    ],
+    "content_class": "SAME-SERIES-OTHER-YEAR",
+    "correct": false,
+    "host_of_real_event": true,
+    "category6": "FABRICATED_OR_INCORRECT",
+    "needs_adjudication": false
+   },
+   "m2": [
+    {
+     "ids": [
+      3261,
+      77183,
+      11,
+      35903,
+      271
+     ],
+     "raw": " Caracas, Venezuela\n\n",
+     "text": " Caracas, Venezuela",
+     "seed": 30131816,
+     "max_new_id": 77183,
+     "group": "UNMATCHED:caracas venezuela"
+    },
+    {
+     "ids": [
+      910,
+      644,
+      89584,
+      271
+     ],
+     "raw": " Chongqing\n\n",
+     "text": " Chongqing",
+     "seed": 30131817,
+     "max_new_id": 89584,
+     "group": "UNMATCHED:chongqing"
+    },
+    {
+     "ids": [
+      26961,
+      409,
+      60323,
+      271
+     ],
+     "raw": " Rio de Janeiro\n\n",
+     "text": " Rio de Janeiro",
+     "seed": 30131818,
+     "max_new_id": 60323,
+     "group": "CITY:Rio de Janeiro"
+    },
+    {
+     "ids": [
+      647,
+      713,
+      88,
+      11,
+      9625,
+      271
+     ],
+     "raw": " Vichy, France\n\n",
+     "text": " Vichy, France",
+     "seed": 30131819,
+     "max_new_id": 9625,
+     "group": "UNMATCHED:vichy france"
+    },
+    {
+     "ids": [
+      61953,
+      271
+     ],
+     "raw": " Lima\n\n",
+     "text": " Lima",
+     "seed": 30131820,
+     "max_new_id": 61953,
+     "group": "UNMATCHED:lima"
+    },
+    {
+     "ids": [
+      57023,
+      271
+     ],
+     "raw": " Damascus\n\n",
+     "text": " Damascus",
+     "seed": 30131821,
+     "max_new_id": 57023,
+     "group": "CITY:Damascus"
+    },
+    {
+     "ids": [
+      55650,
+      271
+     ],
+     "raw": " Venice\n\n",
+     "text": " Venice",
+     "seed": 30131822,
+     "max_new_id": 55650,
+     "group": "CITY:Venice"
+    },
+    {
+     "ids": [
+      7148,
+      271
+     ],
+     "raw": " London\n\n",
+     "text": " London",
+     "seed": 30131823,
+     "max_new_id": 7148,
+     "group": "CITY:London"
+    },
+    {
+     "ids": [
+      663,
+      318,
+      759,
+      84,
+      271
+     ],
+     "raw": " Thimphu\n\n",
+     "text": " Thimphu",
+     "seed": 30131824,
+     "max_new_id": 759,
+     "group": "UNMATCHED:thimphu"
+    },
+    {
+     "ids": [
+      10925,
+      40716,
+      271
+     ],
+     "raw": " Palermo\n\n",
+     "text": " Palermo",
+     "seed": 30131825,
+     "max_new_id": 40716,
+     "group": "CITY:Palermo"
+    }
+   ],
+   "m2_groups": {
+    "UNMATCHED:caracas venezuela": 1,
+    "UNMATCHED:chongqing": 1,
+    "CITY:Rio de Janeiro": 1,
+    "UNMATCHED:vichy france": 1,
+    "UNMATCHED:lima": 1,
+    "CITY:Damascus": 1,
+    "CITY:Venice": 1,
+    "CITY:London": 1,
+    "UNMATCHED:thimphu": 1,
+    "CITY:Palermo": 1
+   },
+   "m2_entropy_bits": 3.321928094887362
+  },
+  {
+   "item": "DP03",
+   "pair": null,
+   "cond": "D",
+   "series": "IGC",
+   "year": 2000,
+   "twin_series": null,
+   "answer": null,
+   "aliases": [],
+   "distractors": [],
+   "question": "Which city hosted the 2000 International Geological Congress, held in 1902?",
+   "H3": 7.405489706549522,
+   "pmax3": 0.09861394017934799,
+   "H0": 8.705329078325802,
+   "pmax0": 0.05133870989084244,
+   "d_R1S1": -13.177632331848145,
+   "d_R2S2": -9.157648086547852,
+   "surprisal_q": 2.348743357873034,
+   "n_question_tokens": 21,
+   "greedy3": {
+    "ids": [
+     12095,
+     271
+    ],
+    "raw": " Paris\n\n",
+    "text": " Paris",
+    "seed": null,
+    "max_new_id": 12095
+   },
+   "greedy0": {
+    "ids": [
+     46287,
+     151643
+    ],
+    "raw": " Vienna",
+    "text": " Vienna",
+    "seed": null,
+    "max_new_id": 151643
+   },
+   "code3": {
+    "premise_status": "ACCEPTED",
+    "corrected": false,
+    "city": "Paris",
+    "all_cities": [
+     "Paris"
+    ],
+    "content_class": "SAME-SERIES-OTHER-YEAR",
+    "correct": false,
+    "host_of_real_event": true,
+    "category6": "FABRICATED_OR_INCORRECT",
+    "needs_adjudication": false
+   },
+   "code0": {
+    "premise_status": "ACCEPTED",
+    "corrected": false,
+    "city": "Vienna",
+    "all_cities": [
+     "Vienna"
+    ],
+    "content_class": "SAME-SERIES-OTHER-YEAR",
+    "correct": false,
+    "host_of_real_event": true,
+    "category6": "FABRICATED_OR_INCORRECT",
+    "needs_adjudication": false
+   },
+   "m2": [
+    {
+     "ids": [
+      81022,
+      271
+     ],
+     "raw": " Kyoto\n\n",
+     "text": " Kyoto",
+     "seed": 22716616,
+     "max_new_id": 81022,
+     "group": "CITY:Kyoto"
+    },
+    {
+     "ids": [
+      393,
+      58852,
+      320,
+      3328,
+      26549,
+      692
+     ],
+     "raw": " Peking (now Beijing)\n\n",
+     "text": " Peking (now Beijing)",
+     "seed": 22716617,
+     "max_new_id": 58852,
+     "group": "CITY:Beijing"
+    },
+    {
+     "ids": [
+      19846,
+      271
+     ],
+     "raw": " Berlin\n\n",
+     "text": " Berlin",
+     "seed": 22716618,
+     "max_new_id": 19846,
+     "group": "CITY:Berlin"
+    },
+    {
+     "ids": [
+      12095,
+      271
+     ],
+     "raw": " Paris\n\n",
+     "text": " Paris",
+     "seed": 22716619,
+     "max_new_id": 12095,
+     "group": "CITY:Paris"
+    },
+    {
+     "ids": [
+      7148,
+      271
+     ],
+     "raw": " London\n\n",
+     "text": " London",
+     "seed": 22716620,
+     "max_new_id": 7148,
+     "group": "CITY:London"
+    },
+    {
+     "ids": [
+      46287,
+      271
+     ],
+     "raw": " Vienna\n\n",
+     "text": " Vienna",
+     "seed": 22716621,
+     "max_new_id": 46287,
+     "group": "CITY:Vienna"
+    },
+    {
+     "ids": [
+      72176,
+      271
+     ],
+     "raw": " Warsaw\n\n",
+     "text": " Warsaw",
+     "seed": 22716622,
+     "max_new_id": 72176,
+     "group": "CITY:Warsaw"
+    },
+    {
+     "ids": [
+      46287,
+      271
+     ],
+     "raw": " Vienna\n\n",
+     "text": " Vienna",
+     "seed": 22716623,
+     "max_new_id": 46287,
+     "group": "CITY:Vienna"
+    },
+    {
+     "ids": [
+      547,
+      4260,
+      276,
+      4645,
+      6392,
+      271
+     ],
+     "raw": " Ulaanbaatar\n\n",
+     "text": " Ulaanbaatar",
+     "seed": 22716624,
+     "max_new_id": 6392,
+     "group": "UNMATCHED:ulaanbaatar"
+    },
+    {
+     "ids": [
+      26549,
+      271
+     ],
+     "raw": " Beijing\n\n",
+     "text": " Beijing",
+     "seed": 22716625,
+     "max_new_id": 26549,
+     "group": "CITY:Beijing"
+    }
+   ],
+   "m2_groups": {
+    "CITY:Kyoto": 1,
+    "CITY:Beijing": 2,
+    "CITY:Berlin": 1,
+    "CITY:Paris": 1,
+    "CITY:London": 1,
+    "CITY:Vienna": 2,
+    "CITY:Warsaw": 1,
+    "UNMATCHED:ulaanbaatar": 1
+   },
+   "m2_entropy_bits": 2.9219280948873623
+  }
+ ]
+}

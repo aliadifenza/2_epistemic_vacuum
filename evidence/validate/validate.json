@@ -1,0 +1,2617 @@
+{
+ "identity": {
+  "stage": "validate",
+  "split": "main+pilot",
+  "limit": 0,
+  "model_id": "Qwen/Qwen2.5-3B",
+  "revision": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+  "commit_hash": "3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+  "snapshot_path": "/root/.cache/huggingface/hub/models--Qwen--Qwen2.5-3B/snapshots/3aab1f1954e9cc14eb9509a215f9e5ca08227a9b",
+  "file_sha256": {
+   "config.json": "27467e2fc311a7656c09a43ae9c3d408211e1f212bbddbc93c8596a06423826f",
+   "generation_config.json": "8c970692323e3ea0e9b8b0a4dca79388d31226e41f83c9fd6014804280ebf6e8",
+   "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+   "model-00001-of-00002.safetensors": "f9558df91d3b89b4826e4db37439edb52f1d62a4fd602685013e7ca6b9f60f8f",
+   "model-00002-of-00002.safetensors": "51410930d5cf19a998fdb17ef0c46e4d9ace72c97a975a3331395a8a500f5edb",
+   "model.safetensors.index.json": "bc8aaa0c87d4335177e01c765f1de0db81661c67c1a72fbfb0d521b09f5ddc56",
+   "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+   "tokenizer_config.json": "c91efca15ceff6e9ee9424db58a6f59cd41294e550a86cbd07e3c1fb500b34f9",
+   "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  "dataset_sha256": "42df54a2597eb48240e57e6630c32bb7d0be6db5b29022af0fa2f6ff7023058b",
+  "gpu": "A10G",
+  "device_name": "NVIDIA A10",
+  "torch": "2.5.1+cu124",
+  "cuda": "12.4",
+  "tf32_matmul": false,
+  "deterministic_algorithms": true
+ },
+ "dataset_sha256": "42df54a2597eb48240e57e6630c32bb7d0be6db5b29022af0fa2f6ff7023058b",
+ "pairs": {
+  "M01": {
+   "tokens_B": 15,
+   "tokens_C": 14,
+   "diff": -1,
+   "token_pass": true,
+   "distractors": {
+    "answer": "Heidelberg",
+    "answer_tokens": 2,
+    "answer_logp": -12.62194538116455,
+    "chosen": [
+     "Trier",
+     "Weimar",
+     "Bamberg"
+    ],
+    "enough": true,
+    "table": [
+     {
+      "city": "Trier",
+      "tokens": 2,
+      "logp": -12.64600944519043,
+      "delta": -0.024064064025878906,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Weimar",
+      "tokens": 2,
+      "logp": -12.516582489013672,
+      "delta": 0.1053628921508789,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Bamberg",
+      "tokens": 2,
+      "logp": -12.359936714172363,
+      "delta": 0.2620086669921875,
+      "token_pass": true,
+      "prom_pass": true
+     }
+    ]
+   }
+  },
+  "M02": {
+   "tokens_B": 15,
+   "tokens_C": 13,
+   "diff": -2,
+   "token_pass": true,
+   "distractors": {
+    "answer": "Rome",
+    "answer_tokens": 1,
+    "answer_logp": -6.696288108825684,
+    "chosen": [
+     "Venice",
+     "Istanbul",
+     "Budapest"
+    ],
+    "enough": true,
+    "table": [
+     {
+      "city": "Venice",
+      "tokens": 1,
+      "logp": -6.88454532623291,
+      "delta": -0.18825721740722656,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Budapest",
+      "tokens": 1,
+      "logp": -7.166926383972168,
+      "delta": -0.4706382751464844,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Istanbul",
+      "tokens": 1,
+      "logp": -6.494098663330078,
+      "delta": 0.20218944549560547,
+      "token_pass": true,
+      "prom_pass": true
+     }
+    ]
+   }
+  },
+  "M03": {
+   "tokens_B": 15,
+   "tokens_C": 14,
+   "diff": -1,
+   "token_pass": true,
+   "distractors": {
+    "answer": "Cambridge",
+    "answer_tokens": 1,
+    "answer_logp": -7.275925636291504,
+    "chosen": [
+     "Manchester",
+     "Oxford",
+     "York"
+    ],
+    "enough": true,
+    "table": [
+     {
+      "city": "Oxford",
+      "tokens": 1,
+      "logp": -7.123818397521973,
+      "delta": 0.15210723876953125,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Manchester",
+      "tokens": 1,
+      "logp": -7.174065589904785,
+      "delta": 0.10186004638671875,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "York",
+      "tokens": 1,
+      "logp": -7.778541564941406,
+      "delta": -0.5026159286499023,
+      "token_pass": true,
+      "prom_pass": true
+     }
+    ]
+   }
+  },
+  "M04": {
+   "tokens_B": 15,
+   "tokens_C": 13,
+   "diff": -2,
+   "token_pass": true,
+   "distractors": {
+    "answer": "Strasbourg",
+    "answer_tokens": 2,
+    "answer_logp": -9.527363777160645,
+    "chosen": [
+     "Rennes",
+     "Lille",
+     "Toulouse"
+    ],
+    "enough": true,
+    "table": [
+     {
+      "city": "Lille",
+      "tokens": 2,
+      "logp": -9.873062133789062,
+      "delta": -0.34569835662841797,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Rennes",
+      "tokens": 2,
+      "logp": -9.608196258544922,
+      "delta": -0.08083248138427734,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Toulouse",
+      "tokens": 2,
+      "logp": -10.325448989868164,
+      "delta": -0.7980852127075195,
+      "token_pass": true,
+      "prom_pass": true
+     }
+    ]
+   }
+  },
+  "M07": {
+   "tokens_B": 15,
+   "tokens_C": 14,
+   "diff": -1,
+   "token_pass": true,
+   "distractors": {
+    "answer": "Zurich",
+    "answer_tokens": 1,
+    "answer_logp": -8.277426719665527,
+    "chosen": [
+     "Belfast",
+     "Geneva",
+     "Bern"
+    ],
+    "enough": true,
+    "table": [
+     {
+      "city": "Geneva",
+      "tokens": 1,
+      "logp": -8.299357414245605,
+      "delta": -0.021930694580078125,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Belfast",
+      "tokens": 1,
+      "logp": -8.264039039611816,
+      "delta": 0.013387680053710938,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Bern",
+      "tokens": 1,
+      "logp": -9.19490909576416,
+      "delta": -0.9174823760986328,
+      "token_pass": true,
+      "prom_pass": true
+     }
+    ]
+   }
+  },
+  "M09": {
+   "tokens_B": 15,
+   "tokens_C": 13,
+   "diff": -2,
+   "token_pass": true,
+   "distractors": {
+    "answer": "Amsterdam",
+    "answer_tokens": 1,
+    "answer_logp": -7.705405235290527,
+    "chosen": [
+     "Valencia",
+     "Milan",
+     "Hamburg"
+    ],
+    "enough": true,
+    "table": [
+     {
+      "city": "Hamburg",
+      "tokens": 1,
+      "logp": -8.013731002807617,
+      "delta": -0.30832576751708984,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Milan",
+      "tokens": 1,
+      "logp": -7.992607116699219,
+      "delta": -0.2872018814086914,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Valencia",
+      "tokens": 1,
+      "logp": -7.678205490112305,
+      "delta": 0.027199745178222656,
+      "token_pass": true,
+      "prom_pass": true
+     }
+    ]
+   }
+  },
+  "M10": {
+   "tokens_B": 15,
+   "tokens_C": 13,
+   "diff": -2,
+   "token_pass": true,
+   "distractors": {
+    "answer": "Edinburgh",
+    "answer_tokens": 1,
+    "answer_logp": -6.631542205810547,
+    "chosen": [
+     "Istanbul",
+     "Oxford",
+     "Manchester"
+    ],
+    "enough": true,
+    "table": [
+     {
+      "city": "Oxford",
+      "tokens": 1,
+      "logp": -7.123818397521973,
+      "delta": -0.4922761917114258,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Istanbul",
+      "tokens": 1,
+      "logp": -6.494098663330078,
+      "delta": 0.13744354248046875,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Manchester",
+      "tokens": 1,
+      "logp": -7.174065589904785,
+      "delta": -0.5425233840942383,
+      "token_pass": true,
+      "prom_pass": true
+     }
+    ]
+   }
+  },
+  "M11": {
+   "tokens_B": 15,
+   "tokens_C": 14,
+   "diff": -1,
+   "token_pass": true,
+   "distractors": {
+    "answer": "Stockholm",
+    "answer_tokens": 1,
+    "answer_logp": -8.17531967163086,
+    "chosen": [
+     "Frankfurt",
+     "Belfast",
+     "Dublin"
+    ],
+    "enough": true,
+    "table": [
+     {
+      "city": "Frankfurt",
+      "tokens": 1,
+      "logp": -8.087501525878906,
+      "delta": 0.08781814575195312,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Dublin",
+      "tokens": 1,
+      "logp": -8.795153617858887,
+      "delta": -0.6198339462280273,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Belfast",
+      "tokens": 1,
+      "logp": -8.264039039611816,
+      "delta": -0.08871936798095703,
+      "token_pass": true,
+      "prom_pass": true
+     }
+    ]
+   }
+  },
+  "M12": {
+   "tokens_B": 15,
+   "tokens_C": 13,
+   "diff": -2,
+   "token_pass": true,
+   "distractors": {
+    "answer": "Vancouver",
+    "answer_tokens": 1,
+    "answer_logp": -6.162405967712402,
+    "chosen": [
+     "Detroit",
+     "Houston",
+     "Baltimore"
+    ],
+    "enough": true,
+    "table": [
+     {
+      "city": "Detroit",
+      "tokens": 1,
+      "logp": -6.313048362731934,
+      "delta": -0.15064239501953125,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Houston",
+      "tokens": 1,
+      "logp": -5.847579002380371,
+      "delta": 0.31482696533203125,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Baltimore",
+      "tokens": 1,
+      "logp": -5.794342041015625,
+      "delta": 0.36806392669677734,
+      "token_pass": true,
+      "prom_pass": true
+     }
+    ]
+   }
+  },
+  "M13": {
+   "tokens_B": 14,
+   "tokens_C": 15,
+   "diff": 1,
+   "token_pass": true,
+   "distractors": {
+    "answer": "Vienna",
+    "answer_tokens": 1,
+    "answer_logp": -5.979408264160156,
+    "chosen": [
+     "Kiev",
+     "Istanbul",
+     "Venice"
+    ],
+    "enough": true,
+    "table": [
+     {
+      "city": "Kiev",
+      "tokens": 1,
+      "logp": -5.921945571899414,
+      "delta": 0.05746269226074219,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Istanbul",
+      "tokens": 1,
+      "logp": -6.494098663330078,
+      "delta": -0.5146903991699219,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Venice",
+      "tokens": 1,
+      "logp": -6.88454532623291,
+      "delta": -0.9051370620727539,
+      "token_pass": true,
+      "prom_pass": true
+     }
+    ]
+   }
+  },
+  "M14": {
+   "tokens_B": 14,
+   "tokens_C": 15,
+   "diff": 1,
+   "token_pass": true,
+   "distractors": {
+    "answer": "Brussels",
+    "answer_tokens": 1,
+    "answer_logp": -8.24107837677002,
+    "chosen": [
+     "Belfast",
+     "Geneva",
+     "Hamburg"
+    ],
+    "enough": true,
+    "table": [
+     {
+      "city": "Hamburg",
+      "tokens": 1,
+      "logp": -8.013731002807617,
+      "delta": 0.22734737396240234,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Belfast",
+      "tokens": 1,
+      "logp": -8.264039039611816,
+      "delta": -0.022960662841796875,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Geneva",
+      "tokens": 1,
+      "logp": -8.299357414245605,
+      "delta": -0.05827903747558594,
+      "token_pass": true,
+      "prom_pass": true
+     }
+    ]
+   }
+  },
+  "M15": {
+   "tokens_B": 15,
+   "tokens_C": 14,
+   "diff": -1,
+   "token_pass": true,
+   "distractors": {
+    "answer": "Berlin",
+    "answer_tokens": 1,
+    "answer_logp": -8.580946922302246,
+    "chosen": [
+     "Stuttgart",
+     "Frankfurt",
+     "Hamburg"
+    ],
+    "enough": true,
+    "table": [
+     {
+      "city": "Stuttgart",
+      "tokens": 1,
+      "logp": -8.469266891479492,
+      "delta": 0.1116800308227539,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Frankfurt",
+      "tokens": 1,
+      "logp": -8.087501525878906,
+      "delta": 0.49344539642333984,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Hamburg",
+      "tokens": 1,
+      "logp": -8.013731002807617,
+      "delta": 0.5672159194946289,
+      "token_pass": true,
+      "prom_pass": true
+     }
+    ]
+   }
+  },
+  "M16": {
+   "tokens_B": 14,
+   "tokens_C": 15,
+   "diff": 1,
+   "token_pass": true,
+   "distractors": {
+    "answer": "Cambridge",
+    "answer_tokens": 1,
+    "answer_logp": -7.275925636291504,
+    "chosen": [
+     "Manchester",
+     "Oxford",
+     "York"
+    ],
+    "enough": true,
+    "table": [
+     {
+      "city": "Oxford",
+      "tokens": 1,
+      "logp": -7.123818397521973,
+      "delta": 0.15210723876953125,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Manchester",
+      "tokens": 1,
+      "logp": -7.174065589904785,
+      "delta": 0.10186004638671875,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "York",
+      "tokens": 1,
+      "logp": -7.778541564941406,
+      "delta": -0.5026159286499023,
+      "token_pass": true,
+      "prom_pass": true
+     }
+    ]
+   }
+  },
+  "M18": {
+   "tokens_B": 14,
+   "tokens_C": 13,
+   "diff": -1,
+   "token_pass": true,
+   "distractors": {
+    "answer": "Stockholm",
+    "answer_tokens": 1,
+    "answer_logp": -8.17531967163086,
+    "chosen": [
+     "Frankfurt",
+     "Belfast",
+     "Dublin"
+    ],
+    "enough": true,
+    "table": [
+     {
+      "city": "Frankfurt",
+      "tokens": 1,
+      "logp": -8.087501525878906,
+      "delta": 0.08781814575195312,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Dublin",
+      "tokens": 1,
+      "logp": -8.795153617858887,
+      "delta": -0.6198339462280273,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Belfast",
+      "tokens": 1,
+      "logp": -8.264039039611816,
+      "delta": -0.08871936798095703,
+      "token_pass": true,
+      "prom_pass": true
+     }
+    ]
+   }
+  },
+  "M19": {
+   "tokens_B": 15,
+   "tokens_C": 13,
+   "diff": -2,
+   "token_pass": true,
+   "distractors": {
+    "answer": "Berkeley",
+    "answer_tokens": 1,
+    "answer_logp": -7.778036117553711,
+    "chosen": [
+     "Charlottesville",
+     "Burlington",
+     "Pasadena"
+    ],
+    "enough": true,
+    "table": [
+     {
+      "city": "Pasadena",
+      "tokens": 1,
+      "logp": -8.574655532836914,
+      "delta": -0.7966194152832031,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Charlottesville",
+      "tokens": 1,
+      "logp": -7.982685089111328,
+      "delta": -0.2046489715576172,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Burlington",
+      "tokens": 1,
+      "logp": -8.068796157836914,
+      "delta": -0.2907600402832031,
+      "token_pass": true,
+      "prom_pass": true
+     }
+    ]
+   }
+  },
+  "M20": {
+   "tokens_B": 14,
+   "tokens_C": 15,
+   "diff": 1,
+   "token_pass": true,
+   "distractors": {
+    "answer": "Montreal",
+    "answer_tokens": 1,
+    "answer_logp": -6.16584587097168,
+    "chosen": [
+     "Detroit",
+     "Houston",
+     "Cleveland"
+    ],
+    "enough": true,
+    "table": [
+     {
+      "city": "Houston",
+      "tokens": 1,
+      "logp": -5.847579002380371,
+      "delta": 0.3182668685913086,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Detroit",
+      "tokens": 1,
+      "logp": -6.313048362731934,
+      "delta": -0.1472024917602539,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Cleveland",
+      "tokens": 1,
+      "logp": -7.006378173828125,
+      "delta": -0.8405323028564453,
+      "token_pass": true,
+      "prom_pass": true
+     }
+    ]
+   }
+  },
+  "M21": {
+   "tokens_B": 14,
+   "tokens_C": 15,
+   "diff": 1,
+   "token_pass": true,
+   "distractors": {
+    "answer": "Edinburgh",
+    "answer_tokens": 1,
+    "answer_logp": -6.631542205810547,
+    "chosen": [
+     "Istanbul",
+     "Oxford",
+     "Manchester"
+    ],
+    "enough": true,
+    "table": [
+     {
+      "city": "Oxford",
+      "tokens": 1,
+      "logp": -7.123818397521973,
+      "delta": -0.4922761917114258,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Istanbul",
+      "tokens": 1,
+      "logp": -6.494098663330078,
+      "delta": 0.13744354248046875,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Manchester",
+      "tokens": 1,
+      "logp": -7.174065589904785,
+      "delta": -0.5425233840942383,
+      "token_pass": true,
+      "prom_pass": true
+     }
+    ]
+   }
+  },
+  "M22": {
+   "tokens_B": 14,
+   "tokens_C": 15,
+   "diff": 1,
+   "token_pass": true,
+   "distractors": {
+    "answer": "Seattle",
+    "answer_tokens": 1,
+    "answer_logp": -5.671934127807617,
+    "chosen": [
+     "Baltimore",
+     "Houston",
+     "Boston"
+    ],
+    "enough": true,
+    "table": [
+     {
+      "city": "Baltimore",
+      "tokens": 1,
+      "logp": -5.794342041015625,
+      "delta": -0.12240791320800781,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Houston",
+      "tokens": 1,
+      "logp": -5.847579002380371,
+      "delta": -0.1756448745727539,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Boston",
+      "tokens": 1,
+      "logp": -5.116480827331543,
+      "delta": 0.5554533004760742,
+      "token_pass": true,
+      "prom_pass": true
+     }
+    ]
+   }
+  },
+  "M23": {
+   "tokens_B": 13,
+   "tokens_C": 15,
+   "diff": 2,
+   "token_pass": true,
+   "distractors": {
+    "answer": "Brussels",
+    "answer_tokens": 1,
+    "answer_logp": -8.24107837677002,
+    "chosen": [
+     "Belfast",
+     "Geneva",
+     "Hamburg"
+    ],
+    "enough": true,
+    "table": [
+     {
+      "city": "Hamburg",
+      "tokens": 1,
+      "logp": -8.013731002807617,
+      "delta": 0.22734737396240234,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Belfast",
+      "tokens": 1,
+      "logp": -8.264039039611816,
+      "delta": -0.022960662841796875,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Geneva",
+      "tokens": 1,
+      "logp": -8.299357414245605,
+      "delta": -0.05827903747558594,
+      "token_pass": true,
+      "prom_pass": true
+     }
+    ]
+   }
+  },
+  "M24": {
+   "tokens_B": 13,
+   "tokens_C": 15,
+   "diff": 2,
+   "token_pass": true,
+   "distractors": {
+    "answer": "Pretoria",
+    "answer_tokens": 2,
+    "answer_logp": -11.940010070800781,
+    "chosen": [
+     "Tripoli",
+     "Sfax",
+     "Kampala"
+    ],
+    "enough": true,
+    "table": [
+     {
+      "city": "Tripoli",
+      "tokens": 2,
+      "logp": -12.36538314819336,
+      "delta": -0.4253730773925781,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Sfax",
+      "tokens": 2,
+      "logp": -12.550199508666992,
+      "delta": -0.6101894378662109,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Kampala",
+      "tokens": 2,
+      "logp": -11.297840118408203,
+      "delta": 0.6421699523925781,
+      "token_pass": true,
+      "prom_pass": true
+     }
+    ]
+   }
+  },
+  "M25": {
+   "tokens_B": 13,
+   "tokens_C": 14,
+   "diff": 1,
+   "token_pass": true,
+   "distractors": {
+    "answer": "Washington",
+    "answer_tokens": 1,
+    "answer_logp": -7.157756805419922,
+    "chosen": [
+     "Miami",
+     "Denver",
+     "Portland"
+    ],
+    "enough": true,
+    "table": [
+     {
+      "city": "Miami",
+      "tokens": 1,
+      "logp": -7.074136734008789,
+      "delta": 0.08362007141113281,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Denver",
+      "tokens": 1,
+      "logp": -7.249462127685547,
+      "delta": -0.091705322265625,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Portland",
+      "tokens": 1,
+      "logp": -7.2684526443481445,
+      "delta": -0.11069583892822266,
+      "token_pass": true,
+      "prom_pass": true
+     }
+    ]
+   }
+  },
+  "M26": {
+   "tokens_B": 13,
+   "tokens_C": 14,
+   "diff": 1,
+   "token_pass": true,
+   "distractors": {
+    "answer": "Oslo",
+    "answer_tokens": 1,
+    "answer_logp": -7.964262962341309,
+    "chosen": [
+     "Cardiff",
+     "Milan",
+     "Bergen"
+    ],
+    "enough": true,
+    "table": [
+     {
+      "city": "Bergen",
+      "tokens": 1,
+      "logp": -8.787812232971191,
+      "delta": -0.8235492706298828,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Cardiff",
+      "tokens": 1,
+      "logp": -7.946218490600586,
+      "delta": 0.018044471740722656,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Milan",
+      "tokens": 1,
+      "logp": -7.992607116699219,
+      "delta": -0.028344154357910156,
+      "token_pass": true,
+      "prom_pass": true
+     }
+    ]
+   }
+  },
+  "M27": {
+   "tokens_B": 13,
+   "tokens_C": 14,
+   "diff": 1,
+   "token_pass": true,
+   "distractors": {
+    "answer": "Brisbane",
+    "answer_tokens": 1,
+    "answer_logp": -9.422524452209473,
+    "chosen": [
+     "Auckland",
+     "Perth",
+     "Canberra"
+    ],
+    "enough": true,
+    "table": [
+     {
+      "city": "Auckland",
+      "tokens": 1,
+      "logp": -9.205594062805176,
+      "delta": 0.21693038940429688,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Perth",
+      "tokens": 1,
+      "logp": -8.556346893310547,
+      "delta": 0.8661775588989258,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Canberra",
+      "tokens": 1,
+      "logp": -8.515853881835938,
+      "delta": 0.9066705703735352,
+      "token_pass": true,
+      "prom_pass": true
+     }
+    ]
+   }
+  },
+  "M28": {
+   "tokens_B": 13,
+   "tokens_C": 14,
+   "diff": 1,
+   "token_pass": true,
+   "distractors": {
+    "answer": "Algiers",
+    "answer_tokens": 2,
+    "answer_logp": -11.443559646606445,
+    "chosen": [
+     "Kampala",
+     "Durban",
+     "Constantine"
+    ],
+    "enough": true,
+    "table": [
+     {
+      "city": "Kampala",
+      "tokens": 2,
+      "logp": -11.297840118408203,
+      "delta": 0.1457195281982422,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Durban",
+      "tokens": 2,
+      "logp": -10.929998397827148,
+      "delta": 0.5135612487792969,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Constantine",
+      "tokens": 2,
+      "logp": -10.759785652160645,
+      "delta": 0.6837739944458008,
+      "token_pass": true,
+      "prom_pass": true
+     }
+    ]
+   }
+  },
+  "M29": {
+   "tokens_B": 13,
+   "tokens_C": 15,
+   "diff": 2,
+   "token_pass": true,
+   "distractors": {
+    "answer": "Copenhagen",
+    "answer_tokens": 1,
+    "answer_logp": -8.894267082214355,
+    "chosen": [
+     "Nottingham",
+     "Dublin",
+     "Hamburg"
+    ],
+    "enough": true,
+    "table": [
+     {
+      "city": "Dublin",
+      "tokens": 1,
+      "logp": -8.795153617858887,
+      "delta": 0.09911346435546875,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Nottingham",
+      "tokens": 1,
+      "logp": -8.893413543701172,
+      "delta": 0.0008535385131835938,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Hamburg",
+      "tokens": 1,
+      "logp": -8.013731002807617,
+      "delta": 0.8805360794067383,
+      "token_pass": true,
+      "prom_pass": true
+     }
+    ]
+   }
+  },
+  "M30": {
+   "tokens_B": 13,
+   "tokens_C": 14,
+   "diff": 1,
+   "token_pass": true,
+   "distractors": {
+    "answer": "Prague",
+    "answer_tokens": 1,
+    "answer_logp": -7.378535270690918,
+    "chosen": [
+     "Manchester",
+     "Budapest",
+     "Valencia"
+    ],
+    "enough": true,
+    "table": [
+     {
+      "city": "Budapest",
+      "tokens": 1,
+      "logp": -7.166926383972168,
+      "delta": 0.21160888671875,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Manchester",
+      "tokens": 1,
+      "logp": -7.174065589904785,
+      "delta": 0.2044696807861328,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Valencia",
+      "tokens": 1,
+      "logp": -7.678205490112305,
+      "delta": -0.2996702194213867,
+      "token_pass": true,
+      "prom_pass": true
+     }
+    ]
+   }
+  },
+  "M31": {
+   "tokens_B": 13,
+   "tokens_C": 15,
+   "diff": 2,
+   "token_pass": true,
+   "distractors": {
+    "answer": "Vienna",
+    "answer_tokens": 1,
+    "answer_logp": -5.979408264160156,
+    "chosen": [
+     "Kiev",
+     "Istanbul",
+     "Venice"
+    ],
+    "enough": true,
+    "table": [
+     {
+      "city": "Kiev",
+      "tokens": 1,
+      "logp": -5.921945571899414,
+      "delta": 0.05746269226074219,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Istanbul",
+      "tokens": 1,
+      "logp": -6.494098663330078,
+      "delta": -0.5146903991699219,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Venice",
+      "tokens": 1,
+      "logp": -6.88454532623291,
+      "delta": -0.9051370620727539,
+      "token_pass": true,
+      "prom_pass": true
+     }
+    ]
+   }
+  },
+  "M32": {
+   "tokens_B": 14,
+   "tokens_C": 13,
+   "diff": -1,
+   "token_pass": true,
+   "distractors": {
+    "answer": "Berlin",
+    "answer_tokens": 1,
+    "answer_logp": -8.580946922302246,
+    "chosen": [
+     "Frankfurt",
+     "Hamburg",
+     "Cologne"
+    ],
+    "enough": true,
+    "table": [
+     {
+      "city": "Hamburg",
+      "tokens": 1,
+      "logp": -8.013731002807617,
+      "delta": 0.5672159194946289,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Frankfurt",
+      "tokens": 1,
+      "logp": -8.087501525878906,
+      "delta": 0.49344539642333984,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Cologne",
+      "tokens": 1,
+      "logp": -9.478657722473145,
+      "delta": -0.8977108001708984,
+      "token_pass": true,
+      "prom_pass": true
+     }
+    ]
+   }
+  },
+  "R02": {
+   "tokens_B": 15,
+   "tokens_C": 14,
+   "diff": -1,
+   "token_pass": true
+  },
+  "R05": {
+   "tokens_B": 14,
+   "tokens_C": 13,
+   "diff": -1,
+   "token_pass": true
+  },
+  "R06": {
+   "tokens_B": 14,
+   "tokens_C": 15,
+   "diff": 1,
+   "token_pass": true
+  },
+  "R10": {
+   "tokens_B": 15,
+   "tokens_C": 14,
+   "diff": -1,
+   "token_pass": true
+  },
+  "P02": {
+   "tokens_B": 13,
+   "tokens_C": 14,
+   "diff": 1,
+   "token_pass": true,
+   "distractors": {
+    "answer": "Florence",
+    "answer_tokens": 1,
+    "answer_logp": -5.667346954345703,
+    "chosen": [
+     "Baltimore",
+     "Kiev",
+     "Istanbul"
+    ],
+    "enough": true,
+    "table": [
+     {
+      "city": "Kiev",
+      "tokens": 1,
+      "logp": -5.921945571899414,
+      "delta": -0.25459861755371094,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Istanbul",
+      "tokens": 1,
+      "logp": -6.494098663330078,
+      "delta": -0.826751708984375,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Baltimore",
+      "tokens": 1,
+      "logp": -5.794342041015625,
+      "delta": -0.12699508666992188,
+      "token_pass": true,
+      "prom_pass": true
+     }
+    ]
+   }
+  },
+  "P03": {
+   "tokens_B": 13,
+   "tokens_C": 14,
+   "diff": 1,
+   "token_pass": true,
+   "distractors": {
+    "answer": "Montreal",
+    "answer_tokens": 1,
+    "answer_logp": -6.16584587097168,
+    "chosen": [
+     "Detroit",
+     "Houston",
+     "Cleveland"
+    ],
+    "enough": true,
+    "table": [
+     {
+      "city": "Houston",
+      "tokens": 1,
+      "logp": -5.847579002380371,
+      "delta": 0.3182668685913086,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Detroit",
+      "tokens": 1,
+      "logp": -6.313048362731934,
+      "delta": -0.1472024917602539,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Cleveland",
+      "tokens": 1,
+      "logp": -7.006378173828125,
+      "delta": -0.8405323028564453,
+      "token_pass": true,
+      "prom_pass": true
+     }
+    ]
+   }
+  },
+  "P04": {
+   "tokens_B": 14,
+   "tokens_C": 15,
+   "diff": 1,
+   "token_pass": true,
+   "distractors": {
+    "answer": "Leningrad",
+    "answer_tokens": 3,
+    "answer_logp": -6.991390228271484,
+    "chosen": [
+     "Rostov",
+     "Novgorod",
+     "Yerevan"
+    ],
+    "enough": true,
+    "table": [
+     {
+      "city": "Rostov",
+      "tokens": 3,
+      "logp": -7.115460395812988,
+      "delta": -0.1240701675415039,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Novgorod",
+      "tokens": 3,
+      "logp": -6.819526672363281,
+      "delta": 0.17186355590820312,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Yerevan",
+      "tokens": 3,
+      "logp": -6.581947326660156,
+      "delta": 0.4094429016113281,
+      "token_pass": true,
+      "prom_pass": true
+     }
+    ]
+   }
+  },
+  "P06": {
+   "tokens_B": 13,
+   "tokens_C": 15,
+   "diff": 2,
+   "token_pass": true,
+   "distractors": {
+    "answer": "Toronto",
+    "answer_tokens": 1,
+    "answer_logp": -5.510038375854492,
+    "chosen": [
+     "Baltimore",
+     "Houston",
+     "Boston"
+    ],
+    "enough": true,
+    "table": [
+     {
+      "city": "Boston",
+      "tokens": 1,
+      "logp": -5.116480827331543,
+      "delta": 0.3935575485229492,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Baltimore",
+      "tokens": 1,
+      "logp": -5.794342041015625,
+      "delta": -0.2843036651611328,
+      "token_pass": true,
+      "prom_pass": true
+     },
+     {
+      "city": "Houston",
+      "tokens": 1,
+      "logp": -5.847579002380371,
+      "delta": -0.3375406265258789,
+      "token_pass": true,
+      "prom_pass": true
+     }
+    ]
+   }
+  }
+ },
+ "pools_sha256": "357c3facc92322dd7ce7a91658d23e31a552da15192d04d058bc61cbe0fb509d",
+ "new_distractors": {
+  "Kyoto": {
+   "answer": "Kyoto",
+   "answer_tokens": 1,
+   "answer_logp": -5.173004150390625,
+   "chosen": [],
+   "enough": false,
+   "table": [
+    {
+     "city": "Nara",
+     "tokens": 2,
+     "logp": -7.351990222930908,
+     "delta": -2.178986072540283,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Osaka",
+     "tokens": 1,
+     "logp": -8.23426628112793,
+     "delta": -3.0612621307373047,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Nagoya",
+     "tokens": 2,
+     "logp": -9.911177635192871,
+     "delta": -4.738173484802246,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Sendai",
+     "tokens": 2,
+     "logp": -8.816362380981445,
+     "delta": -3.6433582305908203,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Sapporo",
+     "tokens": 3,
+     "logp": -8.953055381774902,
+     "delta": -3.7800512313842773,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Fukuoka",
+     "tokens": 3,
+     "logp": -12.628829956054688,
+     "delta": -7.4558258056640625,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Hiroshima",
+     "tokens": 2,
+     "logp": -7.964422702789307,
+     "delta": -2.7914185523986816,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Kanazawa",
+     "tokens": 3,
+     "logp": -11.449487686157227,
+     "delta": -6.276483535766602,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Nagasaki",
+     "tokens": 2,
+     "logp": -10.328200340270996,
+     "delta": -5.155196189880371,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Kumamoto",
+     "tokens": 2,
+     "logp": -11.73978328704834,
+     "delta": -6.566779136657715,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Okayama",
+     "tokens": 2,
+     "logp": -11.997481346130371,
+     "delta": -6.824477195739746,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Niigata",
+     "tokens": 3,
+     "logp": -10.559188842773438,
+     "delta": -5.3861846923828125,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Kagoshima",
+     "tokens": 3,
+     "logp": -9.553241729736328,
+     "delta": -4.380237579345703,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Shizuoka",
+     "tokens": 3,
+     "logp": -11.3048095703125,
+     "delta": -6.131805419921875,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Hakodate",
+     "tokens": 2,
+     "logp": -9.221471786499023,
+     "delta": -4.048467636108398,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Matsue",
+     "tokens": 2,
+     "logp": -10.112346649169922,
+     "delta": -4.939342498779297,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Takamatsu",
+     "tokens": 3,
+     "logp": -17.187416076660156,
+     "delta": -12.014411926269531,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Kochi",
+     "tokens": 2,
+     "logp": -11.767068862915039,
+     "delta": -6.594064712524414,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Gifu",
+     "tokens": 2,
+     "logp": -10.11013412475586,
+     "delta": -4.937129974365234,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Shanghai",
+     "tokens": 1,
+     "logp": -6.38791561126709,
+     "delta": -1.2149114608764648,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Nanjing",
+     "tokens": 2,
+     "logp": -6.24836540222168,
+     "delta": -1.0753612518310547,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Hangzhou",
+     "tokens": 2,
+     "logp": -7.023282527923584,
+     "delta": -1.850278377532959,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Suzhou",
+     "tokens": 2,
+     "logp": -6.033346176147461,
+     "delta": -0.8603420257568359,
+     "token_pass": false,
+     "prom_pass": true
+    },
+    {
+     "city": "Xi'an",
+     "tokens": 2,
+     "logp": -7.250906467437744,
+     "delta": -2.077902317047119,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Wuhan",
+     "tokens": 2,
+     "logp": -7.1961493492126465,
+     "delta": -2.0231451988220215,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Guangzhou",
+     "tokens": 2,
+     "logp": -7.507491588592529,
+     "delta": -2.3344874382019043,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Chengdu",
+     "tokens": 2,
+     "logp": -8.755365371704102,
+     "delta": -3.5823612213134766,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Tianjin",
+     "tokens": 2,
+     "logp": -7.145678997039795,
+     "delta": -1.97267484664917,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Qingdao",
+     "tokens": 2,
+     "logp": -10.793998718261719,
+     "delta": -5.620994567871094,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Harbin",
+     "tokens": 2,
+     "logp": -7.691938877105713,
+     "delta": -2.518934726715088,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Dalian",
+     "tokens": 2,
+     "logp": -7.106239318847656,
+     "delta": -1.9332351684570312,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Taipei",
+     "tokens": 1,
+     "logp": -8.700495719909668,
+     "delta": -3.527491569519043,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Tainan",
+     "tokens": 3,
+     "logp": -10.112203598022461,
+     "delta": -4.939199447631836,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Kaohsiung",
+     "tokens": 4,
+     "logp": -11.690067291259766,
+     "delta": -6.517063140869141,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Daegu",
+     "tokens": 3,
+     "logp": -10.23299789428711,
+     "delta": -5.059993743896484,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Incheon",
+     "tokens": 2,
+     "logp": -10.192023277282715,
+     "delta": -5.01901912689209,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Gwangju",
+     "tokens": 3,
+     "logp": -11.295005798339844,
+     "delta": -6.122001647949219,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Pyongyang",
+     "tokens": 1,
+     "logp": -10.304563522338867,
+     "delta": -5.131559371948242,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Singapore",
+     "tokens": 1,
+     "logp": -8.008934020996094,
+     "delta": -2.8359298706054688,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Bangkok",
+     "tokens": 1,
+     "logp": -7.378925323486328,
+     "delta": -2.205921173095703,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Dubai",
+     "tokens": 1,
+     "logp": -8.793221473693848,
+     "delta": -3.6202173233032227,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Manila",
+     "tokens": 1,
+     "logp": -9.045721054077148,
+     "delta": -3.8727169036865234,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Jakarta",
+     "tokens": 1,
+     "logp": -8.580510139465332,
+     "delta": -3.407505989074707,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Hanoi",
+     "tokens": 2,
+     "logp": -9.025870323181152,
+     "delta": -3.8528661727905273,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Karachi",
+     "tokens": 1,
+     "logp": -7.429807662963867,
+     "delta": -2.256803512573242,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Lahore",
+     "tokens": 1,
+     "logp": -8.794234275817871,
+     "delta": -3.621230125427246,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Dhaka",
+     "tokens": 2,
+     "logp": -8.330750465393066,
+     "delta": -3.1577463150024414,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Colombo",
+     "tokens": 2,
+     "logp": -9.143016815185547,
+     "delta": -3.970012664794922,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Kathmandu",
+     "tokens": 3,
+     "logp": -10.195182800292969,
+     "delta": -5.022178649902344,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Tehran",
+     "tokens": 1,
+     "logp": -10.45800495147705,
+     "delta": -5.285000801086426,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Baghdad",
+     "tokens": 1,
+     "logp": -7.2569427490234375,
+     "delta": -2.0839385986328125,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Damascus",
+     "tokens": 1,
+     "logp": -8.646278381347656,
+     "delta": -3.4732742309570312,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Beirut",
+     "tokens": 1,
+     "logp": -8.45038890838623,
+     "delta": -3.2773847579956055,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Kabul",
+     "tokens": 1,
+     "logp": -9.226755142211914,
+     "delta": -4.053750991821289,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Riyadh",
+     "tokens": 1,
+     "logp": -9.53164291381836,
+     "delta": -4.358638763427734,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Doha",
+     "tokens": 2,
+     "logp": -7.433836936950684,
+     "delta": -2.2608327865600586,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Macau",
+     "tokens": 2,
+     "logp": -8.58815860748291,
+     "delta": -3.415154457092285,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Hong Kong",
+     "tokens": 2,
+     "logp": -8.808638572692871,
+     "delta": -3.635634422302246,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Bombay",
+     "tokens": 1,
+     "logp": -9.316283226013184,
+     "delta": -4.143279075622559,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Calcutta",
+     "tokens": 3,
+     "logp": -10.252305030822754,
+     "delta": -5.079300880432129,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Ankara",
+     "tokens": 1,
+     "logp": -9.626251220703125,
+     "delta": -4.4532470703125,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Tashkent",
+     "tokens": 4,
+     "logp": -9.213193893432617,
+     "delta": -4.040189743041992,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Kuala Lumpur",
+     "tokens": 2,
+     "logp": -8.699612617492676,
+     "delta": -3.526608467102051,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Phnom Penh",
+     "tokens": 4,
+     "logp": -8.941661834716797,
+     "delta": -3.768657684326172,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Yangon",
+     "tokens": 2,
+     "logp": -11.42009162902832,
+     "delta": -6.247087478637695,
+     "token_pass": false,
+     "prom_pass": false
+    }
+   ]
+  },
+  "Sydney": {
+   "answer": "Sydney",
+   "answer_tokens": 1,
+   "answer_logp": -7.13713264465332,
+   "chosen": [
+    "Wellington"
+   ],
+   "enough": false,
+   "table": [
+    {
+     "city": "Perth",
+     "tokens": 1,
+     "logp": -8.556346893310547,
+     "delta": -1.4192142486572266,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Auckland",
+     "tokens": 1,
+     "logp": -9.205594062805176,
+     "delta": -2.0684614181518555,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Wellington",
+     "tokens": 1,
+     "logp": -7.199314117431641,
+     "delta": -0.06218147277832031,
+     "token_pass": true,
+     "prom_pass": true
+    },
+    {
+     "city": "Canberra",
+     "tokens": 1,
+     "logp": -8.515853881835938,
+     "delta": -1.3787212371826172,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Christchurch",
+     "tokens": 2,
+     "logp": -8.620597839355469,
+     "delta": -1.4834651947021484,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Dunedin",
+     "tokens": 2,
+     "logp": -9.064094543457031,
+     "delta": -1.926961898803711,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Newcastle",
+     "tokens": 1,
+     "logp": -8.753440856933594,
+     "delta": -1.6163082122802734,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Geelong",
+     "tokens": 2,
+     "logp": -10.867258071899414,
+     "delta": -3.7301254272460938,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Townsville",
+     "tokens": 2,
+     "logp": -12.131083488464355,
+     "delta": -4.993950843811035,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Cairns",
+     "tokens": 2,
+     "logp": -9.579455375671387,
+     "delta": -2.4423227310180664,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Wollongong",
+     "tokens": 4,
+     "logp": -12.904842376708984,
+     "delta": -5.767709732055664,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Ballarat",
+     "tokens": 2,
+     "logp": -12.249671936035156,
+     "delta": -5.112539291381836,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Bendigo",
+     "tokens": 2,
+     "logp": -12.806686401367188,
+     "delta": -5.669553756713867,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Launceston",
+     "tokens": 3,
+     "logp": -10.181198120117188,
+     "delta": -3.044065475463867,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Toowoomba",
+     "tokens": 3,
+     "logp": -10.625910758972168,
+     "delta": -3.4887781143188477,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Fremantle",
+     "tokens": 3,
+     "logp": -11.152215003967285,
+     "delta": -4.015082359313965,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Rockhampton",
+     "tokens": 3,
+     "logp": -13.121414184570312,
+     "delta": -5.984281539916992,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Invercargill",
+     "tokens": 5,
+     "logp": -11.015363693237305,
+     "delta": -3.8782310485839844,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Rotorua",
+     "tokens": 3,
+     "logp": -9.962992668151855,
+     "delta": -2.825860023498535,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Suva",
+     "tokens": 2,
+     "logp": -11.299873352050781,
+     "delta": -4.162740707397461,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Noum\u00e9a",
+     "tokens": 3,
+     "logp": -9.11319351196289,
+     "delta": -1.9760608673095703,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Port Moresby",
+     "tokens": 4,
+     "logp": -12.982431411743164,
+     "delta": -5.845298767089844,
+     "token_pass": false,
+     "prom_pass": false
+    }
+   ]
+  },
+  "Vienna": {
+   "answer": "Vienna",
+   "answer_tokens": 1,
+   "answer_logp": -5.979408264160156,
+   "chosen": [
+    "Kiev",
+    "Istanbul",
+    "Venice"
+   ],
+   "enough": true,
+   "table": [
+    {
+     "city": "Graz",
+     "tokens": 1,
+     "logp": -10.49708366394043,
+     "delta": -4.517675399780273,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Linz",
+     "tokens": 2,
+     "logp": -8.29078483581543,
+     "delta": -2.3113765716552734,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Salzburg",
+     "tokens": 2,
+     "logp": -10.262043952941895,
+     "delta": -4.282635688781738,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Innsbruck",
+     "tokens": 4,
+     "logp": -10.602126121520996,
+     "delta": -4.62271785736084,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Budapest",
+     "tokens": 1,
+     "logp": -7.166926383972168,
+     "delta": -1.1875181198120117,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Zagreb",
+     "tokens": 2,
+     "logp": -8.324980735778809,
+     "delta": -2.3455724716186523,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Bratislava",
+     "tokens": 4,
+     "logp": -8.483063697814941,
+     "delta": -2.503655433654785,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Ljubljana",
+     "tokens": 5,
+     "logp": -9.284419059753418,
+     "delta": -3.3050107955932617,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Dresden",
+     "tokens": 1,
+     "logp": -9.723846435546875,
+     "delta": -3.7444381713867188,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Milan",
+     "tokens": 1,
+     "logp": -7.992607116699219,
+     "delta": -2.0131988525390625,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Venice",
+     "tokens": 1,
+     "logp": -6.88454532623291,
+     "delta": -0.9051370620727539,
+     "token_pass": true,
+     "prom_pass": true
+    },
+    {
+     "city": "Naples",
+     "tokens": 1,
+     "logp": -9.35803508758545,
+     "delta": -3.378626823425293,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Lisbon",
+     "tokens": 1,
+     "logp": -10.368597984313965,
+     "delta": -4.389189720153809,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Dublin",
+     "tokens": 1,
+     "logp": -8.795153617858887,
+     "delta": -2.8157453536987305,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Hamburg",
+     "tokens": 1,
+     "logp": -8.013731002807617,
+     "delta": -2.034322738647461,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Frankfurt",
+     "tokens": 1,
+     "logp": -8.087501525878906,
+     "delta": -2.10809326171875,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Cologne",
+     "tokens": 1,
+     "logp": -9.478657722473145,
+     "delta": -3.4992494583129883,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Geneva",
+     "tokens": 1,
+     "logp": -8.299357414245605,
+     "delta": -2.319949150085449,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Lyon",
+     "tokens": 1,
+     "logp": -9.407175064086914,
+     "delta": -3.427766799926758,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Marseille",
+     "tokens": 1,
+     "logp": -9.683884620666504,
+     "delta": -3.7044763565063477,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Krakow",
+     "tokens": 2,
+     "logp": -10.221447944641113,
+     "delta": -4.242039680480957,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Bucharest",
+     "tokens": 2,
+     "logp": -8.622274398803711,
+     "delta": -2.6428661346435547,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Belgrade",
+     "tokens": 2,
+     "logp": -7.78849458694458,
+     "delta": -1.8090863227844238,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Leipzig",
+     "tokens": 1,
+     "logp": -10.767992973327637,
+     "delta": -4.7885847091674805,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Nuremberg",
+     "tokens": 4,
+     "logp": -13.926642417907715,
+     "delta": -7.947234153747559,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Stuttgart",
+     "tokens": 1,
+     "logp": -8.469266891479492,
+     "delta": -2.489858627319336,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Hanover",
+     "tokens": 2,
+     "logp": -8.712350845336914,
+     "delta": -2.732942581176758,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Bremen",
+     "tokens": 2,
+     "logp": -9.67011833190918,
+     "delta": -3.6907100677490234,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Antwerp",
+     "tokens": 2,
+     "logp": -8.768510818481445,
+     "delta": -2.789102554321289,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Seville",
+     "tokens": 2,
+     "logp": -6.77244234085083,
+     "delta": -0.7930340766906738,
+     "token_pass": false,
+     "prom_pass": true
+    },
+    {
+     "city": "Porto",
+     "tokens": 1,
+     "logp": -9.075797080993652,
+     "delta": -3.096388816833496,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Genoa",
+     "tokens": 2,
+     "logp": -10.93410873413086,
+     "delta": -4.954700469970703,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Trieste",
+     "tokens": 2,
+     "logp": -7.90774393081665,
+     "delta": -1.9283356666564941,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Riga",
+     "tokens": 2,
+     "logp": -7.090714454650879,
+     "delta": -1.1113061904907227,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Tallinn",
+     "tokens": 2,
+     "logp": -7.700181007385254,
+     "delta": -1.7207727432250977,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Vilnius",
+     "tokens": 3,
+     "logp": -7.898932933807373,
+     "delta": -1.9195246696472168,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Basel",
+     "tokens": 1,
+     "logp": -9.390788078308105,
+     "delta": -3.411379814147949,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Lausanne",
+     "tokens": 3,
+     "logp": -8.794451713562012,
+     "delta": -2.8150434494018555,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Bordeaux",
+     "tokens": 1,
+     "logp": -7.048699378967285,
+     "delta": -1.069291114807129,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Manchester",
+     "tokens": 1,
+     "logp": -7.174065589904785,
+     "delta": -1.194657325744629,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Glasgow",
+     "tokens": 1,
+     "logp": -7.881191253662109,
+     "delta": -1.9017829895019531,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Liverpool",
+     "tokens": 1,
+     "logp": -7.899605751037598,
+     "delta": -1.9201974868774414,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Gothenburg",
+     "tokens": 3,
+     "logp": -8.932921409606934,
+     "delta": -2.9535131454467773,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Kiev",
+     "tokens": 1,
+     "logp": -5.921945571899414,
+     "delta": 0.05746269226074219,
+     "token_pass": true,
+     "prom_pass": true
+    },
+    {
+     "city": "Istanbul",
+     "tokens": 1,
+     "logp": -6.494098663330078,
+     "delta": -0.5146903991699219,
+     "token_pass": true,
+     "prom_pass": true
+    }
+   ]
+  },
+  "Hyderabad": {
+   "answer": "Hyderabad",
+   "answer_tokens": 1,
+   "answer_logp": -8.172453880310059,
+   "chosen": [
+    "Chennai",
+    "Bangalore",
+    "Mumbai"
+   ],
+   "enough": true,
+   "table": [
+    {
+     "city": "Bangalore",
+     "tokens": 1,
+     "logp": -8.204453468322754,
+     "delta": -0.03199958801269531,
+     "token_pass": true,
+     "prom_pass": true
+    },
+    {
+     "city": "Chennai",
+     "tokens": 1,
+     "logp": -8.168231964111328,
+     "delta": 0.004221916198730469,
+     "token_pass": true,
+     "prom_pass": true
+    },
+    {
+     "city": "Pune",
+     "tokens": 1,
+     "logp": -11.243154525756836,
+     "delta": -3.0707006454467773,
+     "token_pass": true,
+     "prom_pass": false
+    },
+    {
+     "city": "Kolkata",
+     "tokens": 1,
+     "logp": -9.152661323547363,
+     "delta": -0.9802074432373047,
+     "token_pass": true,
+     "prom_pass": true
+    },
+    {
+     "city": "Mumbai",
+     "tokens": 1,
+     "logp": -7.995283126831055,
+     "delta": 0.1771707534790039,
+     "token_pass": true,
+     "prom_pass": true
+    },
+    {
+     "city": "Jaipur",
+     "tokens": 2,
+     "logp": -10.717619895935059,
+     "delta": -2.545166015625,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Lucknow",
+     "tokens": 2,
+     "logp": -9.732583999633789,
+     "delta": -1.5601301193237305,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Ahmedabad",
+     "tokens": 2,
+     "logp": -10.727656364440918,
+     "delta": -2.5552024841308594,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Nagpur",
+     "tokens": 2,
+     "logp": -9.258910179138184,
+     "delta": -1.086456298828125,
+     "token_pass": false,
+     "prom_pass": false
+    },
+    {
+     "city": "Bhopal",
+     "tokens": 3,
+     "logp": -10.849742889404297,
+     "delta": -2.6772890090942383,
+     "token_pass": false,
+     "prom_pass": false
+    }
+   ]
+  }
+ }
+}

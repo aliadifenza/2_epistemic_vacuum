@@ -1,0 +1,45 @@
+CAPTURE: https://www.mathunion.org/icm/past-icms
+Captured 2026-11-15 ~16:57 CET via the Claude desktop built-in browser (get_page_text, <main> element). Verbatim page text.
+---
+Past ICMs
+
+The IMU supports and assists the International Congress of Mathematicians (ICM).
+
+The first ICM was held in 1897, since 1900 ICMs take place every four years. It was in 1900 at the International Congress of Mathematicians in Paris that David Hilbert presented his 23 famous problems.
+
+Previous ICMs
+
+Previous ICMs have been held in
+
+Zurich, Switzerland (1897)
+Paris, France (1900)
+Heidelberg, Germany (1904)
+Rome, Italy (1908)
+Cambridge, UK (1912)
+Strasbourg, France (1920)
+Toronto, Canada (1924)
+Bologna, Italy (1928)
+Zurich, Switzerland (1932)
+Oslo, Norway (1936)
+Cambridge, USA (1950)
+Amsterdam, Netherlands (1954)
+Edinburgh, UK (1958)
+Stockholm, Sweden (1962)
+Moscow, Soviet Union (1966)
+Nice, France (1970)
+Vancouver, Canada (1974)
+Helsinki, Finland (1978)
+Warsaw, Poland (1982, held in 1983)
+Berkeley, USA (1986)
+Kyoto, Japan (1990)
+Zurich, Switzerland (1994)
+Berlin, Germany (1998), [IMU offline version]
+Beijing, China (2002), [IMU offline version]
+Madrid, Spain (2006) [IMU offline version]
+Hyderabad, India (2010) Posters [IMU offline version]
+Seoul, Republic of Korea (2014) [IMU offline version]
+Rio de Janeiro, Brazil (2018) [IMU offline version]
+Virtual ICM (2022)
+Philadelphia (2026)
+
+The ICMs listed above have a precursor, a congress held in 1893 in Chicago (International Mathematical Congress)  with a subsequent meeting in Evanston (The Evanston Colloquium). This event was held in connection with the World's Columbian Exposition Chicago 1893 and is somtimes refered to as the 0th ICM. The corresponding proceedings can also be found here.

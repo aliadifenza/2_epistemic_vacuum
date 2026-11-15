@@ -1,0 +1,42 @@
+CAPTURE: https://www.iaptglobal.org/iabms-history
+Captured 2026-11-15 ~16:58 CET via the Claude desktop built-in browser (get_page_text, <main> element). Verbatim page text (congress table, column alignment as rendered).
+---
+History of International Botanical Congresses
+IBC   Place           Year     Presidents               Secretaries               Total      Foreign   Students
+I        Paris            1900    J. De Seynes            E. Perrot1                      233        64
+                                          R. Von Wettstein
+II       Vienna        1905     J. Wiesner                A. Zahlbruckner1         504      2226
+                                          Baron de Moreau    E. De Wildeman1
+III      Bruxelles     1910     Th. Durand               M.G. Hegh                   305      230
+IV     Ithaca           1926    L.H. Bailey                B.M. Duggar                912         937
+                                                                            F.T. Brooks
+V      Cambridge  1930    A.C. Seward             T.F. Chipps                1175         688
+                                                                            M.J. Sirks1
+VI     Amsterdam 1935     J.C. Schoute            H.J. Lam                       963       711
+                                                                           E. Åberg1
+VII    Stockholm   1950    C. Skottsberg           A. Nygren                  1521       1243
+                                                                            P. Chouard1
+VIII   Paris             1954    R. Heim                     R. De Vilmorin           1805     1377          135
+IX     Montreal      1959    W.P. Thompson       C. Frankton1               2124     1640
+                                                                           R. Pomerleau
+                                                                           M.L. Berlyn
+X      Edinburgh   1964     H. Godwin               H. Fletcher1                 2583     1646          568
+                                          G. Taylor2                G.E. Fogg
+                                                                           A. Brook
+XI     Seattle         1969    K. Thimann               R. S. Cowan1              3861      1220         521
+                                          K.B. Raper2              G. Fischer3
+XII    Leningrad    1975     A.L. Takhtajan         O.V. Zelensky1           3688     1870
+                                                                           N.S. Snigirevskaya4
+XIII    Sydney        1981     R. Robertson           W.J. Cram                  2798      1568        487
+XIV   Berlin           1987    K. Esser                    W. Greuter1                3546      2611         702
+                                          F.A. Stafleu5             B. Zimmer4
+XV    Tokyo          1993    M. Furuya                 K. Iwatsuki                 4275      1360
+XVI   St. Louis      1999    P.H. Raven               P.C. Hoch1                  4816      2143       1458
+XVII  Vienna        2005   M. Popp                    J.Greimler1                 3996     3661
+                                          M. Hesse
+                                          T. Stuessy9
+XVIII Melbourne  2011     J. West                     K. Wilson1                   2027     1505         354
+XIX   Shenzhen   2017     W.-H. WU                 S. GE1                         6850    1620        1981
+XX    Madrid        2024   G. Nieto Feliner.       A.M. Escudero           3011      2380        898
+XXI   Cape Town 2029   J.S. Boatwright
+1Secretary-General 2Chairperson, Organizing Committee 3Executive Director 4Scientific Secretary 5Honorary President 6from outside Austria and Hungary 7from outside the U.S. and Canada 8undergraduates only 9Vice President

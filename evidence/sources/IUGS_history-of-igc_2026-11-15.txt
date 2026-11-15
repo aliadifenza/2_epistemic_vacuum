@@ -1,0 +1,39 @@
+CAPTURE: https://www.iugs.org/about-igc/history-of-igc/
+Captured 2026-11-15 ~17:00 CET via the Claude desktop built-in browser. The page hides each 25-year block behind an accordion; all blocks were expanded by script and every line matching "YYYY: The Nth International Geological Congress ..." was extracted verbatim. Note: the 1906 Mexico City entry (10th) was not returned by the extraction pattern, although an earlier fetch of the same page on 15 Nov listed "1906, Mexico City, Mexico"; no dataset item depends on 1906.
+---
+1878: The 1st International Geological Congress, Paris, France
+1881: The 2nd International Geological Congress, Bologna, Italy
+1885: The 3rd International Geological Congress, Berlin, Germany
+1888: The 4th International Geological Congress, London, UK
+1891: The 5th International Geological Congress, Washington, USA
+1894: The 6th International Geological Congress, Zurich, Switzerland
+1897: The 7th International Geological Congress, Russia/ USSR
+1900: The 8th International Geological Congress, Paris, France
+1903: The 9th International Geological Congress, Vienna, Austria
+1910: The 11th International Geological Congress, Stockholm, Sweden
+1913: The 12th International Geological Congress, Toronto, Canada
+1922: The 13th International Geological Congress, Brussels, Belgium
+1926: The 14th International Geological Congress, Madrid, Spain
+1929: The 15th International Geological Congress, Pretoria, South Africa
+1933: The 16th International Geological Congress, Washington, USA
+1937: The 17th International Geological Congress, Russia/USSR
+1948: The 18th International Geological Congress, London, UK
+1952: The 19th International Geological Congress, Algiers, Algeria
+1956: The 20th International Geological Congress, Mexico City, Mexico
+1960: The 21st International Geological Congress, Norden, Denmark
+1964: The 22nd International Geological Congress, New Delhi, India
+1968: The 23rd International Geological Congress, Prague, Czech Republic
+1972: The 24th International Geological Congress, Montréal, Canada
+1976: The 25th International Geological Congress, Sydney, Australia
+1980: The 26th International Geological Congress, Paris, France
+1984: The 27th International Geological Congress, Russia
+1989: The 28th International Geological Congress, Washington, USA
+1992: The 29th International Geological Congress, Kyoto, Japan
+1996: The 30th International Geological Congress, Beijing, China
+2000: The 31st International Geological Congress, Rio De Janeiro, Brazil
+2004: The 32nd International Geological Congress, Florence, Italy
+2008: The 33rd International Geological Congress, Oslo, Norway
+2012: The 34th International Geological Congress, Brisbane, Australia
+2016: The 35th International Geological Congress, Cape Town
+2022: The 36th International Geological Congress, Delhi, India (postponed from 2020 due to COVID-19)
+2024: The 37th International Geological Congress, Busan, Republic of Korea

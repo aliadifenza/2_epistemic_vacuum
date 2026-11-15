@@ -1,0 +1,44 @@
+{
+ "dataset_version": "V1.2-candidate",
+ "amendment": "A2 (PI, 15 Nov 2026 17:48; applied 17:55)",
+ "built_utc": "2026-11-15T16:53:53Z",
+ "frozen": false,
+ "pi_signature": null,
+ "counts": {
+  "main_BC_pairs": 32,
+  "pilot_BC_pairs": 4,
+  "A_main": 12,
+  "A_pilot": 4,
+  "D_main_measured": 12,
+  "D_pilot_measured": 3,
+  "D_excluded": 5
+ },
+ "pending_before_freeze": [
+  "Modal validate stage: token-length (+-2) for R02,R05,R06,R10 C/B questions; distractor selection (equal tokens, +-1 nat) from pools.json; fill Distractor 1-3 and Qwen token diff columns",
+  "Modal gate3 stage: checkpoint revision + tokenizer sha256 + logits/entropy sanity on Qwen2.5-3B",
+  "PI signature on this manifest",
+  "archive snapshots or acceptance of Deviation 4"
+ ],
+ "files": {
+  "AlignedLab_Experiment_2_Dataset_V1_2_CANDIDATE.xlsx": "42df54a2597eb48240e57e6630c32bb7d0be6db5b29022af0fa2f6ff7023058b",
+  "Exp2_Amendment_A2_2026-11-15.md": "0febabe6b3dbab2478e12a9d7a1ecd64a2881a8b0e9ffff1cae5d1b965700c1e",
+  "Exp2_Verification_Log_V0_7_ADJUDICATED_2026-11-15.xlsx": "ae4cd7aa970c99dfc54f1ae8893616258e8ccedefbadd263bbc9e8422908cff6",
+  "Exp2_Adversarial_Review_2026-11-15.md": "bff648b0b015c8aa692a12453a81484d1bb3a1ed8c865946fe2857e6e30b5248",
+  "Exp2_Section7_additions_2026-11-15.md": "c017bcef4815eb94169e4401c7b614a95e5c5f4db71dd937701fb90abeb0f238",
+  "IAPT_iabms-history_2026-11-15.txt": "b500c2b007874fef4cbfab516c631ff36dd816144e6e964611b9149310ee0100",
+  "IMU_past-icms_2026-11-15.txt": "b3ab38af80dfd92b38c5b830cd03fcb87ff38c2257390f9755adeae3091aeb7b",
+  "IUGS_history-of-igc_2026-11-15.txt": "8750fe86fefef35422cc861b82561abaecb3dce4c4599cb1d5f446203100c256",
+  "archive_save.py": "8ee56ea42f680e8599ddbe7849038ee9b2f1aa54ef90d3ebace654690788c40f",
+  "archive_urls.txt": "3560757e29f88dc27796826e7ea9408304cf267c8f6f45f693c979041ac8865f",
+  "pools.json": "89a6acf39e264dbe37eff7109942975188f49a01ad1b9965cbaa6dc7cfba9054"
+ },
+ "inputs_and_previous_versions": {
+  "AlignedLab_Experiment_2_Dataset_V0_7.xlsx": "0080ee156130fd57ae870c9fadb03f0682e3b592ab8a04e76c3e0e44dc446d98",
+  "Exp2_Verification_Log_V0_7_QUALAM_MERGED.xlsx": "54921cb16f618da4f83f0450d3eff42930c2838d75db9770c891d7d52ab09be6",
+  "Exp2_Protocol_V0_4_Approved.docx": "9d0c068b860b723454c63adb01d694eea1aba90ddbe86134c2681de3712d5cb6",
+  "Exp2_Independent_Verification_Protocol_V0_7.docx": "ee37530a83a7aea3ecbabbe800a41e09f30f56bc4ee753a537dddb99efa80d2d",
+  "bd0ffa80-Exp2_Nine_Replacement_Pairs_Schema_Matched_DRAFT.xlsx": "6154b4c11a6f443a9ea582501799487c8d3f6f496dcfd01773dd5199cb5265be",
+  "AlignedLab_Experiment_2_Dataset_V1_0_CANDIDATE.xlsx": "002f6e721b124d8d08996109c08402c59186c96eac7a38a651efccdfd213fdee",
+  "AlignedLab_Experiment_2_Dataset_V1_1_CANDIDATE.xlsx": "480540cec21e008a3fcfb7c66c18b3c18b524fab55c82f336925d67511df8a1c"
+ }
+}

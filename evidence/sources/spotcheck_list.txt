@@ -1,0 +1,4 @@
+Seed 20261115, Python 3.13.18, random.Random(seed).sample(ids,10) over 96 IDs in log order
+Random draw (10): M01-B, M04-C, M23-B, D14, D16, D09, D02, M21-C, M08-B, M23-C
+UNCERTAIN rows added (26): M01-C, M03-C, M05-C, M06-C, M08-C, M10-C, M14-C, M15-C, M17-C, M18-C, M19-C, M22-C, M24-C, M27-C, M28-C, M30-C, M32-C, P01-C, P05-C, P06-C, M06-B, M24-B, M30-B, D13, D15, DP04
+Total rows to spot-check: 36

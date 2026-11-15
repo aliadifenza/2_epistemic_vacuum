@@ -1,0 +1,10 @@
+{
+ "n_cities": 73,
+ "max_abs_diff_nats": 0.0003453811645499627,
+ "mean_abs_diff_nats": 0.00010588615103932132,
+ "token_mismatches": [],
+ "validate_json_sha256": "a21cc2cb69f8a0631be3545183eb5b21ba1fbfe50e4ba0e455a02e20750e4b7f",
+ "dataset_sha256": "0080ee156130fd57ae870c9fadb03f0682e3b592ab8a04e76c3e0e44dc446d98",
+ "scope": "neutral-prefix city prominence only ('The city of' + city); not M1 entropy, not generation",
+ "reference": "Dataset V0.7 'Qwen Validation' sheet: custom numpy forward pass on the PI's Mac, 14 Nov 2026"
+}
