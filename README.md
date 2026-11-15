@@ -1,6 +1,6 @@
 # AlignedLab — Experiment 2: The "I Don't Know" Vacuum Test
 
-**PI:** Dr. Ali Antonio Di Fenza · **Scientific coordinator:** Qualam (GPT-6) · **Engineering:** Claude · **Independent reviewer:** Gemini
+**PI:** Dr. Ali A. Di Fenza · **Scientific coordinator:** Qualam (GPT-6) · **Engineering:** Claude · **Independent reviewer:** Gemini/Grook
 **Status (15 Nov 2026): Gate 4 freeze. Pilot and main experiment NOT authorised.**
 
 ## Question
