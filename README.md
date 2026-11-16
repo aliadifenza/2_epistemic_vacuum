@@ -66,7 +66,11 @@ These are documented roles **within one research case**, not evidence that this 
 - [reviews/](reviews/) — earlier reviews.
 - [docs/](docs/) — reproducibility and freeze records.
 
-**Archive completeness warning:** At the time of this README update, the default branch still requires the **main-run raw evidence, Gate 7 figures and analysis files, Gate 8 reviews, and final PDF/Word report** to be fully synchronized from the original execution archive. Do not mistake the Gate 4 contents or this narrative update for a complete reproducibility deposit. The local main-run evidence and report have been verified separately; they are not represented as committed until GitHub confirms their file paths.
+**Archive status (November 16, 2026):** The corrected [final PDF](reports/AlignedLab_vacuum_test_FINAL.pdf) and [Word report](reports/AlignedLab_vacuum_test_FINAL.docx), [main-run raw results](evidence/main_2026-11-16/raw_results.json), [Gate 7 analysis code](analysis/gate7/gate7_analysis.py), nine summary tables, four figures, run metadata, M4 PI adjudication, and updated PI decisions are now committed and verified. The original frozen code, protocol, and dataset remain preserved. **Outstanding provenance limitation:** the complete original Gemini and Grok Gate 8 review transcripts were not available for archival; a disclosed summary is provided instead. The original `MANIFEST.sha256` covers the Gate 4 archival snapshot, not all later additions.
+
+## What existed before the sprint
+
+The philosophical research agenda and earlier conceptual work predated the November 13–15 sprint. The approved Experiment 2 protocol, frozen dataset, engineering implementation, main run, analysis and this feasibility write-up were developed during the sprint period and its stated Anywhere on Earth submission window. The report distinguishes the preexisting research questions from this sprint's experiment and findings.
 
 ## Scientific integrity and AI disclosure
 
