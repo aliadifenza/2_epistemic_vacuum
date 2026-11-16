@@ -1,78 +1,75 @@
 # AlignedLab — Experiment 2: The "I Don't Know" Vacuum Test
 
-**PI:** Dr. Ali A. Di Fenza · **Scientific coordinator:** Qualam (GPT-6) · **Engineering:** Claude · **Independent scientific reviewer (Gate 4):** Gemini; other reviews documented in `reviews/`
-**Status (15 Nov 2026): Gate 4 closed for freeze and archive. Pilot and main experiment NOT authorized.**
+**A preregistered feasibility study of plausible fiction, obscure fact, and uncertainty in a base language model**
 
-## Question
+**Principal investigator:** Dr. Ali A. Di Fenza (AlignedLab, Berlin)  
+**Research collaborators:** Qualam (ChatGPT/GPT-6: scientific coordination and methodological review), Claude (engineering and analysis), Gemini and Grok (AI review and behavioral rating). The PI retained scientific authority and interpretation.  
+**Status — November 16, 2026:** Main experiment complete; Gate 7 analysis and Gate 8 independent AI critiques complete. **Primary test formally inconclusive.** Gate 9 reporting and public evidence archive in progress.
 
-The PI's hypothesis: a base language model is truth-indifferent, because its space of continuations has no "gaps or cliffs". It cannot natively register "I don't know". Experiment 2 asks whether Qwen2.5-3B Base nevertheless shows a measurable boundary between two kinds of question:
+## Why this experiment exists
 
-- questions about a **real event it does not know** (B), and
-- matched questions about a **plausible event that never happened** (C).
+This work belongs to *Aligning Latent Spaces: From Possibility to Power*. Its philosophical starting point is a question, **not an established finding**: might a language model's learned representations be investigated as a structured space of possibility, in which statistical proximity is not the same as historical actuality?
 
-## Design (Protocol V0.4, PI-approved 14 Nov 2026; authoritative)
+The provocative thesis *"Hallucination is all I have"* asks us to consider whether accurate statements and plausible inventions emerge from a shared generative process. Could that same capacity eventually be harnessed for conceptual exploration, scenario construction, or verifiable scientific discovery? This experiment does **not** test the geometry or ontology of latent space. Instead, it asks one narrow empirical question: **Does a pretrained base model express different uncertainty about plausible fictional events versus obscure real events it cannot recall?**
 
-- **Items:** matched B/C pairs built on named international congress series (ICM, IBC, IGC). Familiar-answer controls (A) and impossible-premise items (D).
-- **M1:** first-token entropy (bits), three-shot and no-demo formats.
-- **M2:** semantic entropy over 10 samples.
-- **M3a:** knownness of each B item (paraphrases vs three matched distractor cities).
-- **M3b:** rejection preference ("No such event ever took place." vs "It was").
-- **M4:** coded greedy answers, with a second rater.
-- **Hypotheses:**
-  - P1: H(C) − H(B) on Unknown pairs, with a floor of 10 pairs.
-  - P2: C vs A.
-  - P3: rejection preference C vs B, two-sided.
-- **Analysis:** bootstrap and sign-flip tests, Holm over P2/P3, and five pre-registered inconclusive conditions.
+The point is to move from philosophical conjecture to falsifiable investigation without prematurely declaring the conjecture true.
 
-Protocol V0.4 in `protocol/` is the **sole authoritative operational specification**. The original Research Agenda documents the philosophical origin of the hypotheses, not a second competing operational authority.
+## Design and frozen scientific authority
 
-## Frozen sample
+The authoritative operational specification is **Protocol V0.4**, together with its approved amendment and recorded PI decisions in [protocol/](protocol/) and [decisions/](decisions/). The pre-run freeze tag is \`gate4-freeze-2026-11-15\`. It must not be silently rewritten to match later interpretations.
 
-`dataset/AlignedLab_Experiment_2_Dataset_V1_2_QWENVALIDATED.xlsx` (sha256 `1d3552f2e5aa325cd1590d8b73b2968825d9838788c944e89a631f66ecbfd5de`):
+- **Model:** Qwen2.5-3B Base, pinned revision \`3aab1f1954e9cc14eb9509a215f9e5ca08227a9b\`; float32, TF32 disabled, deterministic algorithms. A10G was requested; the runtime reported "NVIDIA A10" and exact hardware identity remains unresolved.
+- **Frozen dataset:** [84 questions](dataset/AlignedLab_Experiment_2_Dataset_V1_2_QWENVALIDATED.xlsx): A = 12 familiar Olympic host cities; B = 30 obscure real congress host cities; C = 30 matched plausible fictional congress events; D = 12 impossible premises. SHA-256: \`1d3552f2e5aa325cd1590d8b73b2968825d9838788c944e89a631f66ecbfd5de\`.
+- **Measures:** M1 first-token entropy (primary); M2 rule-grouped response diversity; M3a forced-choice knownness; M3b rejection-versus-acceptance continuation preference; M4 coded greedy answers.
+- **Preregistered tests:** P1 paired entropy difference H(C) − H(B) on operationally Unknown B/C pairs, **inconclusive if fewer than 10**; P2 C versus familiar A; P3 paired rejection preference C versus B. Bootstrap intervals, permutation tests, Holm adjustment for P2/P3, and inconclusive-result conditions were frozen before the main run.
+- The run was completed once. The study reports design failures, negative results, and post-hoc analyses as such.
 
-| Split | B/C pairs | A | D |
-|---|---|---|---|
-| main | 30 | 12 | 12 |
-| pilot | 4 | 4 | 3 |
+## What we found
 
-R02 (Kyoto) and R05 (Sydney) are excluded by PI Decision 11.
+| Test or finding | Observed result | Interpretation |
+|---|---|---|
+| **P1 primary: Unknown B/C pairs** | Only **2** eligible pairs; mean H(C) − H(B) = **−0.24 bits**, 95% CI [−1.22, +0.75], p = 1.0 | **Inconclusive by preregistered rule**; neither confirmation, refutation, nor equivalence |
+| **P2: fiction C vs familiar A** | +5.32 bits, 95% CI [4.78, 5.83], Holm-adjusted p = 0.0002 | Unmatched Olympics/congress contrast; cannot isolate truth status |
+| **P3: rejection preference C vs B** | +0.13, 95% CI [−0.58, +0.84], Holm-adjusted p ≈ 0.73 | No statistically supported difference |
+| **M3a validation** | Forced-choice: 23 Known, 5 Uncertain, 2 Unknown; only **4/23** "Known" free-recall answers were correct | Recognition-like candidate preference did not adequately predict free generation |
+| **M4 behavior** | In 168 greedy completions, one correct rejection and one nonanswer (both D); no C rejection | Prompt-conditioned observed behavior, not proof of absent internal knowledge |
+| **Post-hoc congress-series analysis** | H(C) − H(B) varied strongly with whether B or C mentioned the mathematics congress | Exploratory **association**, not an established causal mechanism |
 
-## Model
+First-token entropy was low for familiar facts and high for both obscure real and plausible fictional events. The model often generated city names even for false premises. These observations **do not** demonstrate a native boundary—or a lack of one—between actuality and possibility.
 
-Qwen/Qwen2.5-3B, revision `3aab1f1954e9cc14eb9509a215f9e5ca08227a9b`, float32, Modal A10G.
+**The scientific contribution is feasibility:** a reproducible pipeline plus a diagnosis of two design faults. First, a forced-choice knownness proxy selected only two cases for the primary test despite low free-recall accuracy. Second, constructing fictional questions by changing the congress series also changed topic/lexical features. The original philosophical question remains open.
 
-## Layout
+## The AlignedLab Research Spiral
 
-| Folder | Contents |
-|---|---|
-| `protocol/` | Protocol V0.4, original Research Agenda, Independent Verification Protocol, Amendment A2, Section 7 additions |
-| `dataset/` | Frozen dataset; `history/` holds V0.7 → V1.2 candidates and verification logs |
-| `pipeline/` | Frozen code and tests (`modal_run.py` is the entry point) |
-| `evidence/` | Gate 3 (real Qwen), validate, NumPy/HF reference check, test results, toy cold run (code paths only, not evidence about Qwen), source captures |
-| `reviews/` | Adversarial, Qualam and earlier Gemini reviews. The Gate 4 review supplied by the PI is archived as a structured rendering with its original CONDITIONAL verdict |
-| `decisions/` | Decision/deviation log, Gate 3 corrections change log |
-| `docs/` | Gate 4 freeze record, reproducibility guide, environment, handoff |
+The research collaboration translated between intellectual levels rather than merely delegating tasks:
 
-`MANIFEST.sha256` lists every file. Verify with `shasum -a 256 -c MANIFEST.sha256`.
+1. **Philosophical direction — Ali:** concepts, questions, hypotheses, and scientific authority.
+2. **Conceptual translation and scientific formalization — Ali + Qualam (ChatGPT):** predictions, measurements, controls, and falsification criteria.
+3. **Technical translation, engineering, and execution — Claude:** approved protocol to code, tests, and reproducible evidence.
+4. **Empirical translation and criticism — Qualam, Gemini, and Grok; interpretation — Ali:** challenge the results, return to philosophy, and refine the next hypothesis.
 
-## Broader research questions
+These are documented roles **within one research case**, not evidence that this arrangement outperforms autonomous agents or other research teams. Observed costs included repeated AI review cycles, cross-model handoffs, limited human visibility into delegated code, and verification difficulties. The human–AI system is a **second, distinct future research question**.
 
-This experiment is part of Dr. Di Fenza's research agenda, *Aligning Latent Spaces: From Possibility to Power*. It investigates one measurable prediction inspired by the philosophical hypothesis that generative models operate over possibilities without a native actuality/fiction boundary. The experiment **does not directly establish the geometry or ontology of latent space**; statistical and behavioral evidence must be interpreted within Protocol V0.4.
+## Moving forward
 
-A **second, distinct exploratory inquiry** concerns the human–AI research process itself: under what conditions can collaboration among a human PI and several AI systems improve scientific understanding, judgment and capability, rather than merely multiply outputs? The PI provides philosophical direction and scientific authorization; AI collaborators formalize, engineer and critique. Our actual workflow also displayed significant coordination costs, specification drift, excessive verification loops, role confusion, difficulties preserving reviewer independence, and repeated need for human correction and prioritization. These are observations from one case, **not controlled evidence** that hybrid collaboration outperforms autonomous agents or a human team. They will be documented separately from Qwen's measured results.
+**Experimental V2:** Validate an Unknown filter against free recall, improve event and fictionality verification, match congress series and wording rather than swapping them, use a yield-tested pilot with prospectively justified sample size, and consider another domain and model. No V2 findings are claimed.
 
-The wider ambition is to make philosophy an active source of testable scientific questions while preserving experimental discipline. See the research agenda and session/lab records for detailed conceptual background and collaboration history.
+**Human–AI collaboration research:** Study epistemic reach, human scientific understanding, coordination costs, independence, errors, and verification quality using suitable comparators. This was not a controlled outcome of Experiment 2.
 
-## Freeze and evidence boundaries
+## Repository and evidence
 
-The original frozen commit and `gate4-freeze-2026-11-15` tag preserve the engineering baseline. Gemini's CONDITIONAL Gate 4 review and PI Decision 12 were added as separate archival documentation: the PI accepted AI-only fictionality verification, incomplete source archiving and retention of the Lima/Nairobi/Agra demonstrations **without claiming the missing checks occurred**. The public release predates the pilot and main experiment and introduces a potential future stimulus-contamination consideration. Gate 3 was a technical diagnostic, not a scientific result about the hypothesis; its three pairs had zero observed Unknown classifications.
+- [protocol/](protocol/) — original research agenda, approved protocol, amendment, scientific controls.
+- [dataset/](dataset/) — frozen 84-item workbook and development history.
+- [pipeline/](pipeline/) — frozen implementation and tests.
+- [decisions/](decisions/) — PI decisions and deviations.
+- [evidence/](evidence/) — pre-run diagnostics, pilot-related archives and source captures currently committed.
+- [reviews/](reviews/) — earlier reviews.
+- [docs/](docs/) — reproducibility and freeze records.
 
-## Integrity rules
+**Archive completeness warning:** At the time of this README update, the default branch still requires the **main-run raw evidence, Gate 7 figures and analysis files, Gate 8 reviews, and final PDF/Word report** to be fully synchronized from the original execution archive. Do not mistake the Gate 4 contents or this narrative update for a complete reproducibility deposit. The local main-run evidence and report have been verified separately; they are not represented as committed until GitHub confirms their file paths.
 
-- AI review is never presented as human verification.
-- Negative results, AI errors and deviations are preserved.
-- No scientific change without PI approval.
+## Scientific integrity and AI disclosure
 
-## Gate 4 archival update (15 November 2026)
+The PI conceived the research and approved substantive scientific choices. Claude implemented and ran the experiment; Qualam (ChatGPT) independently checked the saved statistics and contributed to writing and methods; Gemini and Grok served as AI reviewers and second raters. Reviewer independence and provenance have stated limits. No AI critique is presented as human peer review. The main P1 result remains inconclusive, and neither the experiment nor its results establish a modal ontology of latent space.
 
-The original freeze remains at tag `gate4-freeze-2026-11-15`. Gemini's conditional review and PI Decision 12 are now archived. See `docs/GATE4_CLOSURE_2026-11-15.md` for closure status and accepted limitations. Pilot and main experiment remain **not authorized**.
+**Citation:** Di Fenza, A. A. (2026). *The "I Don't Know" Vacuum Test: A preregistered feasibility study of plausible fiction, obscure fact, and uncertainty in a base language model.* AlignedLab, Berlin.
