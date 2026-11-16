@@ -16,10 +16,10 @@ The point is to move from philosophical conjecture to falsifiable investigation 
 
 ## Design and frozen scientific authority
 
-The authoritative operational specification is **Protocol V0.4**, together with its approved amendment and recorded PI decisions in [protocol/](protocol/) and [decisions/](decisions/). The pre-run freeze tag is \`gate4-freeze-2026-11-15\`. It must not be silently rewritten to match later interpretations.
+The authoritative operational specification is **Protocol V0.4**, together with its approved amendment and recorded PI decisions in [protocol/](protocol/) and [decisions/](decisions/). The pre-run freeze tag is `gate4-freeze-2026-11-15`. It must not be silently rewritten to match later interpretations.
 
-- **Model:** Qwen2.5-3B Base, pinned revision \`3aab1f1954e9cc14eb9509a215f9e5ca08227a9b\`; float32, TF32 disabled, deterministic algorithms. A10G was requested; the runtime reported "NVIDIA A10" and exact hardware identity remains unresolved.
-- **Frozen dataset:** [84 questions](dataset/AlignedLab_Experiment_2_Dataset_V1_2_QWENVALIDATED.xlsx): A = 12 familiar Olympic host cities; B = 30 obscure real congress host cities; C = 30 matched plausible fictional congress events; D = 12 impossible premises. SHA-256: \`1d3552f2e5aa325cd1590d8b73b2968825d9838788c944e89a631f66ecbfd5de\`.
+- **Model:** Qwen2.5-3B Base, pinned revision `3aab1f1954e9cc14eb9509a215f9e5ca08227a9b`; float32, TF32 disabled, deterministic algorithms. A10G was requested; the runtime reported "NVIDIA A10" and exact hardware identity remains unresolved.
+- **Frozen dataset:** [84 questions](dataset/AlignedLab_Experiment_2_Dataset_V1_2_QWENVALIDATED.xlsx): A = 12 familiar Olympic host cities; B = 30 obscure real congress host cities; C = 30 matched plausible fictional congress events; D = 12 impossible premises. SHA-256: `1d3552f2e5aa325cd1590d8b73b2968825d9838788c944e89a631f66ecbfd5de`.
 - **Measures:** M1 first-token entropy (primary); M2 rule-grouped response diversity; M3a forced-choice knownness; M3b rejection-versus-acceptance continuation preference; M4 coded greedy answers.
 - **Preregistered tests:** P1 paired entropy difference H(C) − H(B) on operationally Unknown B/C pairs, **inconclusive if fewer than 10**; P2 C versus familiar A; P3 paired rejection preference C versus B. Bootstrap intervals, permutation tests, Holm adjustment for P2/P3, and inconclusive-result conditions were frozen before the main run.
 - The run was completed once. The study reports design failures, negative results, and post-hoc analyses as such.
