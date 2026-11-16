@@ -4,13 +4,13 @@
 
 **Principal investigator:** Dr. Ali A. Di Fenza (AlignedLab, Berlin)  
 **Research collaborators:** Qualam (ChatGPT/GPT-6: scientific coordination and methodological review), Claude (engineering and analysis), Gemini and Grok (AI review and behavioral rating). The PI retained scientific authority and interpretation.  
-**Status — November 16, 2026:** Main experiment complete; Gate 7 analysis and Gate 8 independent AI critiques complete. **Primary test formally inconclusive.** Gate 9 reporting and public evidence archive in progress.
+**Status — November 16, 2026:** Main experiment complete; Gate 7 analysis and Gate 8 independent AI critiques complete. **Primary test formally inconclusive.**
 
 ## Why this experiment exists
 
 This work belongs to *Aligning Latent Spaces: From Possibility to Power*. Its philosophical starting point is a question, **not an established finding**: might a language model's learned representations be investigated as a structured space of possibility, in which statistical proximity is not the same as historical actuality?
 
-The provocative thesis *"Hallucination is all I have"* asks us to consider whether accurate statements and plausible inventions emerge from a shared generative process. Could that same capacity eventually be harnessed for conceptual exploration, scenario construction, or verifiable scientific discovery? This experiment does **not** test the geometry or ontology of latent space. Instead, it asks one narrow empirical question: **Does a pretrained base model express different uncertainty about plausible fictional events versus obscure real events it cannot recall?**
+The provocative thesis *"Hallucination is all we have"* asks us to consider whether accurate statements and plausible inventions emerge from a shared generative process. Could that same capacity eventually be harnessed for conceptual exploration, scenario construction, or verifiable scientific discovery? This experiment does **not** test the geometry or ontology of latent space. Instead, it asks one narrow empirical question: **Does a pretrained base model express different uncertainty about plausible fictional events versus obscure real events it cannot recall?**
 
 The point is to move from philosophical conjecture to falsifiable investigation without prematurely declaring the conjecture true.
 
