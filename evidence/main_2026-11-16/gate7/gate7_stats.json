@@ -1,0 +1,244 @@
+{
+ "gate": "7",
+ "inputs_sha256": {
+  "raw_results.json": "5885afb2ae6d410d8f03b7436aee9996209b3dfefe856fa9b08f4cdda5b0b759",
+  "analysis.json": "92e725b0cc186a01b75237b2388b73988418b3f3d8ee86ce06e648730ac799f0",
+  "run_meta.json": "3d1fa74c7319e62ab8386e968d5801de41eae994dfd06d07cddd90e3891d986c"
+ },
+ "environment": {
+  "python": "3.10.12",
+  "numpy": "2.2.6",
+  "frozen_run_numpy": "2.5.4"
+ },
+ "labels": {},
+ "frozen_analysis_reproduced_exactly": true,
+ "tests": {
+  "P1_primary_unknown_3shot": {
+   "n": 2,
+   "mean": -0.23830844809865415,
+   "median": -0.23830844809865415,
+   "prop_positive": 0.5,
+   "ci95": [
+    -1.2229445527143117,
+    0.7463276565170034
+   ],
+   "perm": {
+    "p": 1.0,
+    "method": "exact",
+    "n_perm": 4,
+    "sided": "two-sided"
+   },
+   "label": "PRE-REGISTERED primary",
+   "v04": "s6 P1, s7.1",
+   "matches_frozen": true
+  },
+  "P1_all_pairs_3shot": {
+   "n": 30,
+   "mean": 0.27339938115509466,
+   "median": 0.1050273971248048,
+   "prop_positive": 0.5,
+   "ci95": [
+    -0.540013237125322,
+    1.0879423865085036
+   ],
+   "perm": {
+    "p": 0.5175848241517584,
+    "method": "monte-carlo",
+    "n_perm": 100000,
+    "sided": "two-sided"
+   },
+   "label": "PRE-REGISTERED descriptive (all pairs reported)",
+   "v04": "s6 P1",
+   "matches_frozen": true
+  },
+  "known_pairs_3shot": {
+   "n": 23,
+   "mean": 0.5234106162971583,
+   "median": 0.5291459012156379,
+   "prop_positive": 0.5652173913043478,
+   "ci95": [
+    -0.4898851165617876,
+    1.4501792977672618
+   ],
+   "perm": {
+    "p": 0.3055586814880371,
+    "method": "exact",
+    "n_perm": 8388608,
+    "sided": "two-sided"
+   },
+   "label": "PRE-REGISTERED sensitivity (P2 matched check)",
+   "v04": "s6 P2",
+   "matches_frozen": true
+  },
+  "sens_unknown_0shot": {
+   "n": 2,
+   "mean": -0.6128374746397047,
+   "median": -0.6128374746397047,
+   "prop_positive": 0.5,
+   "ci95": [
+    -1.3208542758505084,
+    0.09517932657109895
+   ],
+   "perm": {
+    "p": 1.0,
+    "method": "exact",
+    "n_perm": 4,
+    "sided": "two-sided"
+   },
+   "label": "PRE-REGISTERED sensitivity (no-demo format)",
+   "v04": "s2.5, s7.2",
+   "matches_frozen": true
+  },
+  "sens_all_0shot": {
+   "n": 30,
+   "mean": 0.10972511469863287,
+   "median": -0.08911315450986601,
+   "prop_positive": 0.5,
+   "ci95": [
+    -0.46861881206205636,
+    0.6869080049281634
+   ],
+   "perm": {
+    "p": 0.7145928540714593,
+    "method": "monte-carlo",
+    "n_perm": 100000,
+    "sided": "two-sided"
+   },
+   "label": "PRE-REGISTERED sensitivity (no-demo format)",
+   "v04": "s2.5, s7.2",
+   "matches_frozen": true
+  },
+  "P3_R1S1_all_pairs": {
+   "n": 30,
+   "mean": 0.12936178843180338,
+   "median": -0.2969064712524414,
+   "prop_positive": 0.43333333333333335,
+   "ci95": [
+    -0.5804429968198139,
+    0.8365853071212763
+   ],
+   "perm": {
+    "p": 0.7260227397726022,
+    "method": "monte-carlo",
+    "n_perm": 100000,
+    "sided": "two-sided"
+   },
+   "label": "PRE-REGISTERED secondary test",
+   "v04": "s6 P3, s7.2",
+   "matches_frozen": true
+  },
+  "P3_R2S2_all_pairs_robustness": {
+   "n": 30,
+   "mean": 0.049589347839355466,
+   "median": 0.22588014602661133,
+   "prop_positive": 0.5666666666666667,
+   "ci95": [
+    -0.19053052504857373,
+    0.29162667274475096
+   ],
+   "perm": {
+    "p": 0.6920230797692023,
+    "method": "monte-carlo",
+    "n_perm": 100000,
+    "sided": "two-sided"
+   },
+   "label": "PRE-REGISTERED robustness template",
+   "v04": "s4 M3b",
+   "matches_frozen": true
+  },
+  "P3_R1S1_unknown_descriptive": {
+   "n": 2,
+   "mean": 0.9029660224914551,
+   "median": 0.9029660224914551,
+   "prop_positive": 0.5,
+   "ci95": [
+    -0.22199535369873047,
+    2.0279273986816406
+   ],
+   "perm": {
+    "p": 1.0,
+    "method": "exact",
+    "n_perm": 4,
+    "sided": "two-sided"
+   },
+   "label": "DESCRIPTIVE",
+   "v04": "s4 M3b",
+   "matches_frozen": true
+  },
+  "P2_C_vs_A": {
+   "diff": 5.324201369939754,
+   "ci": [
+    4.779387455005914,
+    5.830364883196967
+   ],
+   "p": 9.999000099990002e-05,
+   "n_perm": 10000,
+   "sided": "two-sided",
+   "label": "PRE-REGISTERED secondary test",
+   "v04": "s6 P2, s7.2",
+   "matches_frozen": true
+  },
+  "holm_secondary": {
+   "P2_raw": 9.999000099990002e-05,
+   "P3_raw": 0.7260227397726022,
+   "P2_adj": 0.00019998000199980003,
+   "P3_adj": 0.7260227397726022,
+   "matches_frozen": true
+  },
+  "supp_istanbul_excl_unknown_3shot": {
+   "n": 2,
+   "mean": -0.23830844809865415,
+   "median": -0.23830844809865415,
+   "prop_positive": 0.5,
+   "ci95": [
+    -1.2229445527143117,
+    0.7463276565170034
+   ],
+   "perm": {
+    "p": 1.0,
+    "method": "exact",
+    "n_perm": 4,
+    "sided": "two-sided"
+   },
+   "n_istanbul_in_unknown": 0,
+   "label": "PRE-REGISTERED supplementary (verification protocol, 14 Nov)",
+   "matches_frozen": true
+  }
+ },
+ "protocol_settings_used": {
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20261116,
+  "signflip_exact_up_to_n": 24,
+  "signflip_mc": 100000,
+  "perm_seed": 20261116,
+  "p2_label_permutations": 10000,
+  "alpha": 0.05,
+  "min_unknown_pairs": 10
+ },
+ "exploratory_series_strata": {
+  "B is ICM": {
+   "n": 12,
+   "mean": 2.6675663009090034
+  },
+  "C is ICM": {
+   "n": 11,
+   "mean": -2.2021900018517515
+  },
+  "neither ICM": {
+   "n": 7,
+   "mean": 0.05932512058772436
+  }
+ },
+ "gate6_closure_check": {
+  "report_sha256": "06d9bee4d9b1530e4485cdb51782c6c32033e1f72f8dda5a81cff85b51521c3f",
+  "checks": {
+   "1 current report (Decision 15 present, nothing 'pending' about adjudication)": true,
+   "2 P2 narrowed": true,
+   "3 P3/M4 wording": true,
+   "4 series qualified": true,
+   "5 provenance qualified": true,
+   "Decision 16 recorded (report + decision file)": true
+  }
+ },
+ "all_pre_registered_blocks_match_frozen": true
+}

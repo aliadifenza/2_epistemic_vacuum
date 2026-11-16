@@ -1,0 +1,11 @@
+analysis,status,V0.4 ref,n,mean,median,prop_positive,ci95_lo,ci95_hi,p,test,n_perm,matches_frozen_analysis_json
+P1_primary_unknown_3shot,PRE-REGISTERED primary,"s6 P1, s7.1",2,-0.2383,-0.2383,0.500,-1.2229,0.7463,1.0000,exact,4,True
+P1_all_pairs_3shot,PRE-REGISTERED descriptive (all pairs reported),s6 P1,30,0.2734,0.1050,0.500,-0.5400,1.0879,0.5176,monte-carlo,100000,True
+known_pairs_3shot,PRE-REGISTERED sensitivity (P2 matched check),s6 P2,23,0.5234,0.5291,0.565,-0.4899,1.4502,0.3056,exact,8388608,True
+sens_unknown_0shot,PRE-REGISTERED sensitivity (no-demo format),"s2.5, s7.2",2,-0.6128,-0.6128,0.500,-1.3209,0.0952,1.0000,exact,4,True
+sens_all_0shot,PRE-REGISTERED sensitivity (no-demo format),"s2.5, s7.2",30,0.1097,-0.0891,0.500,-0.4686,0.6869,0.7146,monte-carlo,100000,True
+P3_R1S1_all_pairs,PRE-REGISTERED secondary test,"s6 P3, s7.2",30,0.1294,-0.2969,0.433,-0.5804,0.8366,0.7260,monte-carlo,100000,True
+P3_R2S2_all_pairs_robustness,PRE-REGISTERED robustness template,s4 M3b,30,0.0496,0.2259,0.567,-0.1905,0.2916,0.6920,monte-carlo,100000,True
+P3_R1S1_unknown_descriptive,DESCRIPTIVE,s4 M3b,2,0.9030,0.9030,0.500,-0.2220,2.0279,1.0000,exact,4,True
+P2_C_vs_A (mean H(C) - mean H(A)),PRE-REGISTERED secondary test,"s6 P2, s7.2",30+12,5.3242,,,4.7794,5.8304,0.000100,label permutation,10000,True
+supp_istanbul_excl_unknown_3shot,PRE-REGISTERED supplementary,consistency record #4,2,-0.2383,-0.2383,0.500,-1.2229,0.7463,1.0000,exact,4,True

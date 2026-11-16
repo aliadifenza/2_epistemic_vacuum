@@ -138,3 +138,35 @@ Rule applied to every C candidate (disclosed): an event is confusable if its own
 - **Timestamp correction:** engineering entries above written in the workspace carry approximate clock times (for example "20:30", "20:05") that do not match the Mac clock. Where they conflict, the Mac file times in `docs/GATE4_FREEZE.md` are authoritative.
 - **Gemini Gate 4 review: CONDITIONAL** (as reported by the PI). The review text is **not in this archive**.
 - **Freeze** executed by Claude (engineering) on PI instruction. Canonical files and hashes: `MANIFEST.sha256`. No hypothesis, measurement, sample, threshold, control or analysis rule changed.
+
+## 8. Engineering corrections for the pilot (16 Nov 2026, Claude; branch `pilot-prep-2026-11-16`; no scientific change)
+
+Found while checking pilot readiness against the frozen code at `gate4-freeze-2026-11-15`:
+1. `pilot`/`main` reported **PASS even when the runner logged integrity failures** (only `gate3` checked them). Now any integrity failure or runner exception sets FAIL (exit 1).
+2. `pilot`/`main` did **not enforce the frozen dataset hash** (`--expected-sha` was optional). Now required and checked against the Gate 4 hash; a mismatch stops before any measurement.
+3. On failure, `pilot`/`main` now **return every file** instead of withholding them (failures are observations); `gate3`/`validate` behaviour unchanged.
+4. Installed package versions are recorded in the stage record (ENVIRONMENT.md "known reproducibility risk"; image not rebuilt).
+Five regression tests added; suite 51/51. Hypotheses, measurements, sample, controls, thresholds and analysis untouched.
+
+## 9. Gate 5 pilot and closure (16 Nov 2026)
+| Time (CET) | Entry |
+|---|---|
+| 07:54 | PI authorises the pilot (Modal A10G, frozen configuration). |
+| 08:01–08:03 | Pilot run `ap-fU9IM0saA4YsTnq4XNkAS7` on NVIDIA A10G, commit `5db0e05`. PASS; no integrity failures; 12/12 shared items bitwise identical to Gate 3. Estimated cost $0.023 (billed amount not yet read). |
+| 08:14 | PI: M4 adjudication of P06-C via blind Gemini; frozen M2 analysis unchanged. |
+| 08:17 | Gemini blind coding of 30 rows received (pasted by the PI; model and version unrecorded). category6 agreement 29/30, κ 0.90. |
+| 08:21 | **PI Decision 13:** Gate 5 CLOSED — PASS; P06-C = FABRICATED_OR_INCORRECT; second-rater requirement satisfied; limitations retained; Gate 6 not authorised. |
+
+## 10. Gate 6 main run and review (16 Nov 2026)
+| Time (CET) | Entry |
+|---|---|
+| 08:31 | Pre-launch checks (Claude): dataset hash, `pipeline/` vs freeze tag (engineering guards only), `run_main.command` identical to the bundle copy, no `modal_out/main/`. All pass. |
+| 08:33 | PI authorises the Gate 6 main run under the frozen configuration. |
+| 08:37–08:41 | Main run `ap-2j3QT7VD8SPdnIPWPOInwI`, one run, exit 0, commit `5db0e05` (pipeline identical to `9be369f`). 84 items; no integrity failures; runner error null. Device reported **"NVIDIA A10"** (requested A10G). Estimated cost $0.072 (billed amount not read). |
+| 08:47 | Claude's first-coder codes for the four UNMATCHED M4 rows and the D03 flag sealed before any second rating. |
+| 08:52–08:54 | Two 30-row ratings pasted (Gemini, Grok) were of the pilot packet; not imported. |
+| 08:58 | Gemini blind rating of the 168-row main packet received; category6 163/168, κ 0.92. |
+| 09:03 | **PI Decision 14:** Grok added as supplementary blind rater; Gemini remains of record. Grok's 168 rows: category6 identical to Gemini's on every row. |
+| 09:05 | **PI Decision 15:** five M4 codes adjudicated (M23-C, D10, D03 no-demo FABRICATED_OR_INCORRECT; D02 no-demo NONANSWER; D03 three-shot CORRECT_REJECTION). Frozen raw codes unchanged. |
+| 09:18 | Qualam Gate 6 integrity review (existing chat, PI-confirmed free of the day's results): CONDITIONAL PASS; statistics independently reproduced; P1 inconclusive confirmed; five wording/provenance corrections, applied. Correction 1 was a stale report in the review packet (Claude upload error). |
+| 09:21 | **PI Decision 16:** 9A GPU "hardware identity unresolved", no rerun; 9B post hoc series breakdown retained as a labelled exploratory limitation. |

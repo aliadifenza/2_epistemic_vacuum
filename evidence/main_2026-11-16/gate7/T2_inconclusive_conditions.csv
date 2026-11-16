@@ -1,0 +1,6 @@
+condition,met (True = inconclusive),evidence
+1 fewer than 10 Unknown pairs,True,"2 Unknown pairs (M23, M28)"
+2 positive control fails (median H(A) not below median H(B-Unknown)),False,median H3 A 0.199 vs B-Unknown 6.360 bits (B-Unknown n = 2)
+3 >25% non-answers in B or C greedy (three-shot),False,"automatic: B 0/30, C 0/30 (+1 UNMATCHED, adjudicated FABRICATED, Decision 15)"
+4 formats give clear opposite-sign results,False,Unknown-pair intervals in both formats contain 0
+5 integrity or implementation defect,False,integrity_failures empty; runner_error null; GPU name 'NVIDIA A10' recorded as hardware identity unresolved (Decision 16)
